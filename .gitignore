@@ -1,0 +1,14 @@
+# cloned repositories under study (large, re-creatable with scripts/clone_repos.sh)
+clones/
+# scratch outputs
+*.log
+evidence*.txt
+__pycache__/
+.DS_Store
+# LaTeX build files
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
