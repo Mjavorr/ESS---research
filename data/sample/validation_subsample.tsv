@@ -1,0 +1,51 @@
+repo	event	category	days_from_warning	migration_date	migration_commit	detection_correct	termination_type	motivation	note	commit_url
+wojciechmula/pyahocorasick	artifact_v3	after_enforcement	423	2025-06-13	9508c90968	yes	upgrade	incidental (Python 3.13 support PR)	v2; fix authored 2024-10-20 but merged to default branch only 2025-06-13	https://github.com/wojciechmula/pyahocorasick/commit/9508c90968
+tendermint/tendermint	artifact_v3	never (as of collection)				yes	none		v3 still in coverage.yml and fuzz-nightly.yml	https://github.com/tendermint/tendermint/tree/HEAD/.github/workflows
+tonihele/openkeeper	artifact_v3	during_warning	166	2024-09-29	b7c2655092	yes	upgrade	incidental (release automation)		https://github.com/tonihele/openkeeper/commit/b7c2655092
+ardupilot/ardupilot	artifact_v3	during_warning	167	2024-09-30	72016df914	yes	upgrade	deprecation ('v3 is being deprecated')	21 occurrences	https://github.com/ardupilot/ardupilot/commit/72016df914
+zdoom/raze	artifact_v3	after_enforcement	255	2024-12-27	e3a0ec65f7	yes	workflow_removed	incidental	v2 workflow moved out of .github/workflows; v2 broken since 2024-06-30. CORRECTED by per-version rule	https://github.com/zdoom/raze/commit/e3a0ec65f7
+halfhp/androidplot	artifact_v3	after_enforcement	873	2026-09-06	11f9fc43fc	yes	upgrade	incidental (Android SDK upgrade)	v3 broken ~19 months	https://github.com/halfhp/androidplot/commit/11f9fc43fc
+anrieff/libcpuid	artifact_v3	during_warning	12	2024-04-28	e965155651	yes	upgrade	deprecation (Node 16, links changelog)	motivated by a different deprecation	https://github.com/anrieff/libcpuid/commit/e965155651
+roslynpad/roslynpad	artifact_v3	after_enforcement	152	2024-09-15	3b958bbbd0	yes	upgrade	failure ('Fix build')	v2, after v1/v2 cutoff	https://github.com/roslynpad/roslynpad/commit/3b958bbbd0
+tailwarden/komiser	artifact_v3	never (as of collection)				yes	none		v3 still in release.yml	https://github.com/tailwarden/komiser/tree/HEAD/.github/workflows
+elastic/apm-agent-java	artifact_v3	during_warning	149	2024-09-12	9a12b98ee9	yes	upgrade	targeted (bump to v4)		https://github.com/elastic/apm-agent-java/commit/9a12b98ee9
+johnnymorganz/stylua	artifact_v3	after_enforcement	648	2026-01-24	5a550e1e22	yes	upgrade	failure ('Fix large scale test')		https://github.com/johnnymorganz/stylua/commit/5a550e1e22
+academysoftwarefoundation/openfx	artifact_v3	during_warning	224	2024-11-26	3aa2b55222	yes	upgrade	incidental (release signing)		https://github.com/academysoftwarefoundation/openfx/commit/3aa2b55222
+pfrest/pfSense-pkg-RESTAPI	artifact_v3	during_warning	12	2024-04-28	c963af58e4	yes	upgrade	bot (Dependabot PR, merged by human)	bot hidden behind merge commit	https://github.com/pfrest/pfSense-pkg-RESTAPI/commit/c963af58e4
+iced-rs/iced	artifact_v3	after_enforcement	147	2024-09-10	44235f0c0b	yes	upgrade	targeted	v1, after v1/v2 cutoff	https://github.com/iced-rs/iced/commit/44235f0c0b
+weewx/weewx	artifact_v3	during_warning	37	2024-05-23	85e5ac832d	yes	upgrade	targeted	authored 2024-05-04 on development branch, merged 2024-05-23	https://github.com/weewx/weewx/commit/85e5ac832d
+ventoy/ventoy	artifact_v3	after_enforcement	300	2025-02-10	ee994a0569	yes	upgrade	targeted ('github ai version update')		https://github.com/ventoy/ventoy/commit/ee994a0569
+tidyverse/dtplyr	artifact_v3	during_warning	142	2024-09-05	564fccceb8	yes	upgrade	incidental (monthly upkeep)		https://github.com/tidyverse/dtplyr/commit/564fccceb8
+unifyai/ivy	artifact_v3	during_warning	171	2024-10-04	84d6e3bb4f	yes	replaced_by_alternative	incidental (reusable workflow)		https://github.com/unifyai/ivy/commit/84d6e3bb4f
+zenorogue/hyperrogue	artifact_v3	during_warning	12	2024-04-28	9372ecb8f8	yes	workflow_removed	incidental	v2 Android CI removed before v1/v2 cutoff	https://github.com/zenorogue/hyperrogue/commit/9372ecb8f8
+obgm/libcoap	artifact_v3	during_warning	23	2024-05-09	e599e25d6e	yes	upgrade	incidental (in an oss-fuzz fix)		https://github.com/obgm/libcoap/commit/e599e25d6e
+microsoft/vcpkg-tool	artifact_v3	during_warning	276	2025-01-17	13451b9168	yes	upgrade	failure (quotes the error)	failure on 2025-01-17, before the 2025-01-30 cutoff: suggests brownouts	https://github.com/microsoft/vcpkg-tool/commit/13451b9168
+mermaid-js/mermaid	artifact_v3	during_warning	129	2024-08-23	b9f4faa916	yes	upgrade	bot (Renovate, via release branch)	authored 2024-03-25, reached default branch 2024-08-23	https://github.com/mermaid-js/mermaid/commit/b9f4faa916
+maximegmd/cyberenginetweaks	artifact_v3	after_enforcement	150	2024-09-13	d543378ee9	yes	upgrade	targeted	v2, after v1/v2 cutoff	https://github.com/maximegmd/cyberenginetweaks/commit/d543378ee9
+datadog/dd-trace-js	artifact_v3	after_enforcement	148	2024-09-11	8490eae520	yes	upgrade	targeted	v2 part migrated after v1/v2 cutoff. CORRECTED by per-version rule	https://github.com/datadog/dd-trace-js/commit/8490eae520
+pocoproject/poco	artifact_v3	after_enforcement	294	2025-02-04	269b3b4087	yes	upgrade	failure (quotes the error)		https://github.com/pocoproject/poco/commit/269b3b4087
+lightspark/lightspark	set_output	during_warning	148	2023-03-08	5cf06f5cb6	yes	upgrade	warnings ('fix deprecation warnings')		https://github.com/lightspark/lightspark/commit/5cf06f5cb6
+alexta69/metube	set_output	during_warning	1251	2026-03-15	7fa1fc7938	yes	upgrade	incidental (code review fixes)		https://github.com/alexta69/metube/commit/7fa1fc7938
+pinterest/gestalt	set_output	never (as of collection)				yes	none		3 occurrences remain	https://github.com/pinterest/gestalt/tree/HEAD/.github/workflows
+unifyai/ivy	set_output	during_warning	978	2025-06-15	560966a033	yes	workflow_removed	incidental (remove redundant workflows)		https://github.com/unifyai/ivy/commit/560966a033
+conventional-changelog/conventional-changelog	set_output	during_warning	954	2025-05-22	557d74edf5	yes	workflow_removed	incidental	set-output printed from a JS script inside the workflow	https://github.com/conventional-changelog/conventional-changelog/commit/557d74edf5
+aio-libs/aiokafka	set_output	during_warning	1430	2026-09-10	00964835eb	yes	replaced_by_alternative	incidental (setup-python caching)		https://github.com/aio-libs/aiokafka/commit/00964835eb
+python-poetry/poetry	set_output	during_warning	22	2022-11-02	5b10800e5e	yes	upgrade	warnings (links a run with the warning)	also in pilot	https://github.com/python-poetry/poetry/commit/5b10800e5e
+visgl/deck.gl	set_output	during_warning	563	2024-04-26	5c1d0b0e8c	yes	upgrade	incidental (CI update)		https://github.com/visgl/deck.gl/commit/5c1d0b0e8c
+cog-creators/red-discordbot	set_output	during_warning	31	2022-11-11	0f20f15c26	yes	upgrade	deprecation (explicit)	set-output printed from Python	https://github.com/cog-creators/red-discordbot/commit/0f20f15c26
+lucide-icons/lucide	set_output	during_warning	264	2023-07-02	7c8f898893	yes	upgrade	deprecation ('remove legacy set-outputs')		https://github.com/lucide-icons/lucide/commit/7c8f898893
+airbnb/visx	set_output	during_warning	1116	2025-10-31	451b6c5f94	yes	upgrade	incidental (toolchain update)		https://github.com/airbnb/visx/commit/451b6c5f94
+projectdiscovery/shuffledns	set_output	during_warning	208	2023-05-07	db34c6634c	yes	upgrade	incidental (docker workflow update)		https://github.com/projectdiscovery/shuffledns/commit/db34c6634c
+moov-io/iso8583	set_output	during_warning	1407	2026-08-18	15f915bfb2	yes	step_removed	incidental (security hardening)		https://github.com/moov-io/iso8583/commit/15f915bfb2
+hyperion-project/hyperion.ng	set_output	during_warning	27	2022-11-07	06091b0786	yes	upgrade	incidental (APT build cleanup)		https://github.com/hyperion-project/hyperion.ng/commit/06091b0786
+belphemur/soundswitch	set_output	during_warning	117	2023-02-05	679c01c48e	yes	upgrade	targeted		https://github.com/belphemur/soundswitch/commit/679c01c48e
+pycontribs/jira	set_output	during_warning	331	2023-09-07	c48951f601	yes	replaced_by_alternative	incidental (setup-python caching)		https://github.com/pycontribs/jira/commit/c48951f601
+runatlantis/atlantis	set_output	during_warning	102	2023-01-21	74aaa44083	yes	upgrade	deprecation (explicit)		https://github.com/runatlantis/atlantis/commit/74aaa44083
+johnnymorganz/stylua	set_output	never (as of collection)				yes	none		1 occurrence remains	https://github.com/johnnymorganz/stylua/tree/HEAD/.github/workflows
+cleverraven/cataclysm-dda	set_output	during_warning	103	2023-01-22	4104d317d4	yes	upgrade	deprecation (explicit)	15 occurrences	https://github.com/cleverraven/cataclysm-dda/commit/4104d317d4
+datadog/dd-trace-js	set_output	during_warning	444	2023-12-29	e84c8e4f10	yes	upgrade	deprecation (explicit)		https://github.com/datadog/dd-trace-js/commit/e84c8e4f10
+stripe/stripe-react-native	set_output	never (as of collection)				yes	none		1 occurrence remains	https://github.com/stripe/stripe-react-native/tree/HEAD/.github/workflows
+bitnami/sealed-secrets	set_output	during_warning	13	2022-10-24	0634f9c843	yes	upgrade	warnings ('Fix warning', links changelog)		https://github.com/bitnami/sealed-secrets/commit/0634f9c843
+openedx/edx-platform	set_output	during_warning	631	2024-07-03	7da377eb12	yes	upgrade	deprecation (explicit)		https://github.com/openedx/edx-platform/commit/7da377eb12
+fenics/dolfinx	set_output	during_warning	6	2022-10-17	d88b0dce9e	yes	replaced_by_alternative	incidental (Docker pipeline rewrite)		https://github.com/fenics/dolfinx/commit/d88b0dce9e
+jmerle/competitive-companion	set_output	during_warning	192	2023-04-21	2309077043	yes	replaced_by_alternative	incidental (Yarn to pnpm)		https://github.com/jmerle/competitive-companion/commit/2309077043
