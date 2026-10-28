@@ -1,0 +1,247 @@
+repo	event	exposed_at_warning	still_present_now	category	days_from_warning	migration_commit	migration_date	migration_author	author_is_bot	migration_subject	last_repo_activity	group_migrations
+academysoftwarefoundation/openfx	artifact_v3	2	0	during_warning	224	3aa2b55222	2024-11-26	Gary Oberbrunner	no	Clean up & sign release artifacts	2026-10-15	2025-01-30:2024-11-26;
+academysoftwarefoundation/openfx	set_output	0	0	not_exposed							2026-10-15	
+actions/cache	artifact_v3	0	0	not_exposed							2026-07-15	
+actions/cache	set_output	1	0	during_warning	55	a57932faba	2022-12-05	Sankalp Kotewar	no	Merge pull request #1014 from jongwooo/chore/use-built-in-cache-action	2026-07-15	
+adaway/adaway	artifact_v3	0	0	not_exposed							2025-12-29	
+adaway/adaway	set_output	1	1	never (as of collection)							2025-12-29	
+aio-libs/aiokafka	artifact_v3	7	0	after_enforcement	193	f6c79a086f	2024-10-26	Denis Otkidach	no	Update actions, fix publishing (#1063)	2026-10-17	2024-06-30:2024-10-26;
+aio-libs/aiokafka	set_output	4	0	during_warning	1430	00964835eb	2026-09-10	Denis Otkidach	no	Update & pin github actions in CI (#1183)	2026-10-17	
+airbnb/visx	artifact_v3	0	0	not_exposed							2026-06-22	
+airbnb/visx	set_output	2	0	during_warning	1116	451b6c5f94	2025-10-31	Harrison Shoff	no	Toolchain updates. Phase 1 (#1938)	2026-06-22	
+airbytehq/airbyte	artifact_v3	3	0	after_enforcement	268	9177c79c48	2025-01-09	Patrick Nilan	no	[Github Actions/Workflows] - update `actions/upload-artifact` to v4 due to v3 deprecation (#51013)	2026-10-27	2024-06-30:2024-09-10;2025-01-30:2025-01-09;
+airbytehq/airbyte	set_output	12	0	during_warning	799	c4f6fdc932	2024-12-18	"Aaron (""AJ"") Steers"	no	ci: replace deprecated `::set-output` syntax (#49856)	2026-10-27	
+alexta69/metube	artifact_v3	0	0	not_exposed							2026-10-27	
+alexta69/metube	set_output	1	0	during_warning	1251	7fa1fc7938	2026-03-15	Alex Shnitman	no	code review fixes	2026-10-27	
+altair-graphql/altair	artifact_v3	2	0	after_enforcement	151	42ed9d99de	2024-09-14	Samuel Imolorhe	no	updated upload-artifact actions	2026-10-23	2024-06-30:2024-09-14;
+altair-graphql/altair	set_output	1	2	never (as of collection)							2026-10-23	
+amphp/http-server	artifact_v3	0	0	not_exposed							2026-10-25	
+amphp/http-server	set_output	1	1	never (as of collection)							2026-10-25	
+anrieff/libcpuid	artifact_v3	2	0	during_warning	12	e965155651	2024-04-28	The Tumultuous Unicorn Of Darkness	no	CI: update actions to Node20	2026-09-13	2025-01-30:2024-04-28;
+anrieff/libcpuid	set_output	0	0	not_exposed							2026-09-13	
+ardupilot/ardupilot	artifact_v3	19	0	during_warning	167	72016df914	2024-09-30	Peter Barker	no	github: move to actions/upload-artifact@v4	2026-10-27	2025-01-30:2024-09-30;
+ardupilot/ardupilot	set_output	21	0	during_warning	112	161d360dc3	2023-01-31	Pierre Kancir	no	CI: update github action to remove deprecation warnings from logs	2026-10-27	
+artifexsoftware/mupdf	artifact_v3	1	0	after_enforcement	339	eac0ffd2dc	2025-03-21	Julian Smith	no	.github/workflows/test_python_pip.yml: use latest ubuntu and actions/upload-artifact@v4.	2026-10-28	2025-01-30:2025-03-21;
+artifexsoftware/mupdf	set_output	0	0	not_exposed							2026-10-28	
+belphemur/soundswitch	artifact_v3	0	0	not_exposed							2026-10-27	
+belphemur/soundswitch	set_output	1	0	during_warning	117	679c01c48e	2023-02-05	Antoine Aflalo	no	ci(output): Change the way to give an output to CI steps	2026-10-27	
+bitnami/sealed-secrets	artifact_v3	0	0	not_exposed							2026-10-26	
+bitnami/sealed-secrets	set_output	2	0	during_warning	13	0634f9c843	2022-10-24	josvaz	no	Fix set-output usages as per GH guidance (#1039)	2026-10-26	
+c7-game/prototype	artifact_v3	3	0	after_enforcement	248	9fb9101813	2024-12-20	Travis	no	Update export-c7.yml for Godot4	2026-10-25	2024-06-30:2024-12-20;
+c7-game/prototype	set_output	0	0	not_exposed							2026-10-25	
+carguo/gsy_github_app_flutter	artifact_v3	2	0	after_enforcement	341	2a2cc79baf	2025-03-23	guoshuyu	no	update ci	2026-10-25	2024-06-30:2025-03-23;
+carguo/gsy_github_app_flutter	set_output	0	0	not_exposed							2026-10-25	
+cherrypy/cherrypy	artifact_v3	6	0	after_enforcement	374	25d7a16f2c	2025-04-25	Sviatoslav Sydorenko	no	🧪 Bump upload/download-artifact to v4	2025-11-20	2025-01-30:2025-04-25;
+cherrypy/cherrypy	set_output	0	0	not_exposed							2025-11-20	
+cleverraven/cataclysm-dda	artifact_v3	0	0	not_exposed							2026-10-28	
+cleverraven/cataclysm-dda	set_output	20	0	during_warning	103	4104d317d4	2023-01-22	Binrui Dong	no	Migrate from set-output to GITHUB_OUTPUT (#63169)	2026-10-28	
+codingcommons/typesafe-i18n	artifact_v3	1	0	after_enforcement	665	c89bf827fc	2026-02-10	Benjamin Strasser	no	ci: updated upload artifacts ci.	2026-02-11	2024-06-30:2026-02-10;
+codingcommons/typesafe-i18n	set_output	0	0	not_exposed							2026-02-11	
+cog-creators/red-discordbot	artifact_v3	7	0	during_warning	266	22888f8014	2025-01-07	Kowlin	no	Bump actions to V4 (#6504)	2026-10-25	2025-01-30:2025-01-07;
+cog-creators/red-discordbot	set_output	3	0	during_warning	31	0f20f15c26	2022-11-11	Jakub Kuczys	no	Stop using deprecated set-output GH Actions command (#5876)	2026-10-25	
+conventional-changelog/conventional-changelog	artifact_v3	0	0	not_exposed							2026-10-19	
+conventional-changelog/conventional-changelog	set_output	1	0	during_warning	954	557d74edf5	2025-05-22	dangreen	no	ci: rm release please	2026-10-19	
+cyberbotics/webots_ros2	artifact_v3	2	0	after_enforcement	250	4f63238bc6	2024-12-22	MNikoliCC	no	Update GitHub artifacts action to v4 (#1014)	2026-10-12	2024-06-30:2024-12-22;
+cyberbotics/webots_ros2	set_output	0	0	not_exposed							2026-10-12	
+dani-garcia/vaultwarden	artifact_v3	0	0	not_exposed							2026-10-25	
+dani-garcia/vaultwarden	set_output	2	0	during_warning	29	53da073274	2022-11-09	Daniel García	no	Merge branch 'BlackDex-update-rust-and-deps'	2026-10-25	
+datadog/dd-trace-js	artifact_v3	3	0	after_enforcement	148	8490eae520	2024-09-11	Ugaitz Urien	no	Update to actions/upload-artifact@v4 in system tests workflow (#4669)	2026-10-28	2024-06-30:2024-09-11;2025-01-30:2024-06-25;
+datadog/dd-trace-js	set_output	4	0	during_warning	444	e84c8e4f10	2023-12-29	Stephen Belanger	no	Update actions versions (#3907)	2026-10-28	
+dflook/terraform-github-actions	artifact_v3	0	0	not_exposed							2026-10-21	
+dflook/terraform-github-actions	set_output	3	0	during_warning	1	8b707cc637	2022-10-12	Daniel Flook	no	Merge pull request #213 from dflook/output	2026-10-21	
+dlsc-software-consulting-gmbh/gemsfx	artifact_v3	1	0	after_enforcement	290	7076e598b9	2025-01-31	Dirk Lemmermann	no	Update upload-artifact action to version v4	2026-10-27	2024-06-30:2024-09-12;
+dlsc-software-consulting-gmbh/gemsfx	set_output	0	0	not_exposed							2026-10-27	
+draios/sysdig-inspect	artifact_v3	11	0	after_enforcement	822	51eaa36112	2026-07-17	Roberto Scolaro	no	release: bump version to 0.12.1 and fix release workflow (#203)	2026-07-17	2025-01-30:2026-07-17;
+draios/sysdig-inspect	set_output	0	0	not_exposed							2026-07-17	
+dyninst/dyninst	artifact_v3	5	0	after_enforcement	163	e979c81711	2024-09-26	kupsch	no	update versions of github workflow actions (#1784)	2026-10-28	2024-06-30:2024-09-26;
+dyninst/dyninst	set_output	0	0	not_exposed							2026-10-28	
+effector/effector	artifact_v3	4	0	after_enforcement	150	a07a3b9b71	2024-09-13	Dmitry Boldyrev	no	Update upload/download artifact actions versions	2026-10-27	2024-06-30:2024-09-13;
+effector/effector	set_output	0	0	not_exposed							2026-10-27	
+elastic/apm-agent-java	artifact_v3	2	0	during_warning	149	9a12b98ee9	2024-09-12	Jan Calanog	no	Bump upload- and download-artifact to v4 (#3798)	2026-10-27	2025-01-30:2024-09-12;
+elastic/apm-agent-java	set_output	0	0	not_exposed							2026-10-27	
+eraser-dev/eraser	artifact_v3	0	0	not_exposed							2026-09-28	
+eraser-dev/eraser	set_output	2	0	during_warning	23	c55d81b7c0	2022-11-03	Peter Engelbert	no	ci: increase timeout for linter action (#459)	2026-09-28	
+facebook/mvfst	artifact_v3	3	0	after_enforcement	151	427d8ec34a	2024-09-14	Alex Hornby	no	regenerate github actions to update actions/upload-artifact version	2026-10-28	2024-06-30:2024-09-14;
+facebook/mvfst	set_output	0	0	not_exposed							2026-10-28	
+fairy-stockfish/fairy-stockfish	artifact_v3	3	0	during_warning	258	c2b61bb161	2024-12-30	yjf2002ghty	no	Update workflow action version (#851)	2026-09-23	2025-01-30:2024-12-30;
+fairy-stockfish/fairy-stockfish	set_output	0	0	not_exposed							2026-09-23	
+fenics/dolfinx	artifact_v3	0	0	not_exposed							2026-10-26	
+fenics/dolfinx	set_output	10	0	during_warning	6	d88b0dce9e	2022-10-17	Jack S. Hale	no	Rewrite Docker pipeline (#2404)	2026-10-26	
+fiduswriter/fiduswriter	artifact_v3	1	0	after_enforcement	299	6cda357f05	2025-02-09	Johannes Wilm	no	Merge pull request #1303 from fiduswriter/develop	2026-10-21	2025-01-30:2025-02-09;
+fiduswriter/fiduswriter	set_output	0	0	not_exposed							2026-10-21	
+flxzt/rnote	artifact_v3	2	0	during_warning	219	c8f283ce5b	2024-11-21	Kneemund	no	ci: sanitize ref name, update deprecated actions	2026-10-25	2025-01-30:2024-11-21;
+flxzt/rnote	set_output	0	0	not_exposed							2026-10-25	
+getsentry/sentry	artifact_v3	2	0	during_warning	97	6d95cf5654	2024-07-22	Matthew T	no	chore bump actions/checkout & actions/depedency-review-action (#74464)	2026-10-28	2025-01-30:2024-07-22;
+getsentry/sentry	set_output	4	0	during_warning	1	efae4c9d9b	2022-10-12	anthony sottile	no	ref: fix deprecated set-output calls (#39922)	2026-10-28	
+getsentry/sentry-native	artifact_v3	1	0	during_warning	36	65446506fd	2024-05-22	Markus Hintersteiner	no	Move NDK from sentry-java to sentry-native (#944)	2026-10-28	2025-01-30:2024-05-22;
+getsentry/sentry-native	set_output	0	0	not_exposed							2026-10-28	
+goosemod/openasar	artifact_v3	4	0	after_enforcement	211	ef44708496	2024-11-13	Oliver Medhurst	no	ci: fix deprecated usage	2026-07-24	2024-06-30:2024-11-13;
+goosemod/openasar	set_output	0	0	not_exposed							2026-07-24	
+gradle/gradle	artifact_v3	0	0	not_exposed							2026-10-28	
+gradle/gradle	set_output	1	0	during_warning	384	031e70ecf6	2023-10-30	bot-teamcity	no	Merge commit '8ec670c5eeddcdaba6ee840360cb4eeda788558e' into release	2026-10-28	
+guysoft/octopi	artifact_v3	1	0	after_enforcement	203	0cf9e406c3	2024-11-05	Guy Sheffer	no	Update github action upload version	2026-08-04	2024-06-30:2024-11-05;
+guysoft/octopi	set_output	1	0	during_warning	1391	b24c43af50	2026-08-02	Guy Sheffer	no	Merge pull request #879 from guysoft/feature/e2e	2026-08-04	
+halfhp/androidplot	artifact_v3	2	0	after_enforcement	873	11f9fc43fc	2026-09-06	Nick Fellows	no	Upgrade to Android SDK 37, AGP 9.4 and Gradle 9.7 (#126)	2026-09-07	2025-01-30:2026-09-06;
+halfhp/androidplot	set_output	0	0	not_exposed							2026-09-07	
+hbldh/bleak	artifact_v3	1	0	after_enforcement	172	2e6890f68f	2024-10-05	David Lechner	no	Merge pull request #1652 from hbldh/release/0.22.3	2026-09-30	2024-06-30:2024-10-05;
+hbldh/bleak	set_output	0	0	not_exposed							2026-09-30	
+hyperion-project/hyperion.ng	artifact_v3	0	0	not_exposed							2026-10-08	
+hyperion-project/hyperion.ng	set_output	5	0	during_warning	27	06091b0786	2022-11-07	LordGrey	no	Cleanup APT-builds	2026-10-08	
+iced-rs/iced	artifact_v3	6	0	after_enforcement	147	44235f0c0b	2024-09-10	Héctor Ramón Jiménez	no	Upgrade `upload-artifact` action in `build` workflow	2026-10-21	2024-06-30:2024-09-10;
+iced-rs/iced	set_output	0	0	not_exposed							2026-10-21	
+icsharpcode/codeconverter	artifact_v3	6	0	during_warning	85	ccbd778cd1	2024-07-10	Christoph Wille	no	Update dotnet.yml build actions versions	2026-10-27	2025-01-30:2024-07-10;
+icsharpcode/codeconverter	set_output	0	0	not_exposed							2026-10-27	
+izhangzhihao/intellij-rainbow-brackets	artifact_v3	0	0	not_exposed							2026-06-01	
+izhangzhihao/intellij-rainbow-brackets	set_output	3	0	during_warning	688	1953e6c184	2024-08-29	张志豪	no	update github actions	2026-06-01	
+jaredhendrickson13/pfsense-api	artifact_v3	2	0	during_warning	12	c963af58e4	2024-04-28	Jared Hendrickson	no	Merge pull request #455 from jaredhendrickson13/dependabot/github_actions/actions/upload-artifact-4	2026-10-21	2025-01-30:2024-04-28;
+jaredhendrickson13/pfsense-api	set_output	0	0	not_exposed							2026-10-21	
+jmerle/competitive-companion	artifact_v3	0	0	not_exposed							2026-06-29	
+jmerle/competitive-companion	set_output	1	0	during_warning	192	2309077043	2023-04-21	Jasper van Merle	no	Migrate from Yarn 1 to PNPM	2026-06-29	
+jnwatson/py-lmdb	artifact_v3	11	0	after_enforcement	263	bbc3ff7d16	2025-01-04	Nic Watson	no	Merge pull request #371 from jnwatson/3.13-support	2026-10-20	2024-06-30:2025-01-04;
+jnwatson/py-lmdb	set_output	0	0	not_exposed							2026-10-20	
+johnnymorganz/stylua	artifact_v3	4	0	after_enforcement	648	5a550e1e22	2026-01-24	JohnnyMorganz	no	Fix large scale test	2026-10-11	2025-01-30:2026-01-24;
+johnnymorganz/stylua	set_output	1	1	never (as of collection)							2026-10-11	
+jscutlery/semver	artifact_v3	0	0	not_exposed							2026-07-15	
+jscutlery/semver	set_output	2	0	during_warning	112	74db148ad1	2023-01-31	Edouard Bozon	no	ci: 🤖 use new syntax for setting output	2026-07-15	
+k4yt3x/video2x	artifact_v3	1	0	after_enforcement	175	a7952fc493	2024-10-08	K4YT3X	no	feat(*): rewritten the project with C/C++ (#1172)	2026-03-07	2024-06-30:2024-10-08;
+k4yt3x/video2x	set_output	1	0	during_warning	734	cd2006b4d9	2024-10-14	K4YT3X	no	feat(*): switched to spdlog for logging and organized headers (#1183)	2026-03-07	
+klembot/twinejs	artifact_v3	1	0	after_enforcement	306	7704bd734c	2025-02-16	Chris Klimas	no	Merge pull request #1584 from klembot/fix-playwright-ci	2026-10-06	2025-01-30:2025-02-16;
+klembot/twinejs	set_output	0	0	not_exposed							2026-10-06	
+kubernetes-client/csharp	artifact_v3	1	0	after_enforcement	301	4b19366e72	2025-02-11	Boshi Lian	no	Update upload-artifact action to version 4 in buildtest workflow (#1615)	2026-10-26	2025-01-30:2025-02-11;
+kubernetes-client/csharp	set_output	0	0	not_exposed							2026-10-26	
+lgug2z/komorebi	artifact_v3	0	0	not_exposed							2026-10-27	
+lgug2z/komorebi	set_output	1	0	during_warning	735	58d3086615	2024-10-15	LGUG2Z	no	ci(github): update build + release workflow	2026-10-27	
+lightspark/lightspark	artifact_v3	0	0	not_exposed							2026-10-18	
+lightspark/lightspark	set_output	2	0	during_warning	148	5cf06f5cb6	2023-03-08	Ludger Krämer	no	fix deprecation warnings	2026-10-18	
+liji32/sameboy	artifact_v3	1	0	after_enforcement	333	e76088cde2	2025-03-15	Lior Halphon	no	I  need somebody to love me as much as GitHub loves deprecating upload-artifacts majors	2026-10-27	2025-01-30:2025-03-15;
+liji32/sameboy	set_output	0	0	not_exposed							2026-10-27	
+lincolnloop/python-qrcode	artifact_v3	2	0	after_enforcement	636	6de51df7d9	2026-01-12	Chris Beaven	no	Merge branch 'main' into review-pr-397	2026-03-25	2024-06-30:2026-01-12;
+lincolnloop/python-qrcode	set_output	0	0	not_exposed							2026-03-25	
+linux-surface/linux-surface	artifact_v3	15	0	after_enforcement	327	4b678ad16e	2025-03-09	Maximilian Luz	no	Update actions	2026-10-27	2025-01-30:2025-03-09;
+linux-surface/linux-surface	set_output	0	0	not_exposed							2026-10-27	
+locustio/locust	artifact_v3	0	0	not_exposed							2026-10-27	
+locustio/locust	set_output	1	0	during_warning	29	59d7cee486	2022-11-09	Lars Holmberg	no	update github action to use modern form to set output var (https://github.blog/changelog/2022-10-11-	2026-10-27	
+lucide-icons/lucide	artifact_v3	4	0	after_enforcement	318	3c23331e9e	2025-02-28	Eric Fennis	no	ci(actions): Update & cleanup actions (#2764)	2026-10-28	2025-01-30:2025-02-28;
+lucide-icons/lucide	set_output	4	0	during_warning	264	7c8f898893	2023-07-02	Eric Fennis	no	Improve release workflow (#1397)	2026-10-28	
+maharmstone/btrfs	artifact_v3	1	1	never (as of collection)							2026-09-14	
+maharmstone/btrfs	set_output	0	0	not_exposed							2026-09-14	
+matchish/laravel-scout-elasticsearch	artifact_v3	0	0	not_exposed							2026-09-24	
+matchish/laravel-scout-elasticsearch	set_output	1	1	never (as of collection)							2026-09-24	
+maximegmd/cyberenginetweaks	artifact_v3	1	0	after_enforcement	150	d543378ee9	2024-09-13	Maxime	no	Merge pull request #965 from maximegmd/maximegmd-patch-3	2026-10-26	2024-06-30:2024-09-13;
+maximegmd/cyberenginetweaks	set_output	0	0	not_exposed							2026-10-26	
+mcneel/rhino3dm	artifact_v3	0	0	not_exposed							2026-10-20	
+mcneel/rhino3dm	set_output	3	0	during_warning	99	830ba551ab	2023-01-18	fraguada	no	remove use of depricated set-output	2026-10-20	
+mermaid-js/mermaid	artifact_v3	2	0	during_warning	129	b9f4faa916	2024-08-23	Knut Sveidqvist	no	Merge branch 'release/11.0.0'	2026-10-28	2025-01-30:2024-08-23;
+mermaid-js/mermaid	set_output	0	0	not_exposed							2026-10-28	
+mhammond/pywin32	artifact_v3	4	0	after_enforcement	304	373bb5cfad	2025-02-14	Avasam	no	Bump actions/upload-artifact to v4 and automatically merge artefacts (#2473)	2026-10-21	2025-01-30:2025-02-14;
+mhammond/pywin32	set_output	0	0	not_exposed							2026-10-21	
+microsoft/vcpkg-tool	artifact_v3	1	0	during_warning	276	13451b9168	2025-01-17	Billy O'Neal	no	Update upload-artifact to v4. (#1575)	2026-10-26	2025-01-30:2025-01-17;
+microsoft/vcpkg-tool	set_output	0	0	not_exposed							2026-10-26	
+mlocati/docker-php-extension-installer	artifact_v3	2	0	after_enforcement	145	4e8a3a3ff2	2024-09-08	Michele Locati	no	test-recent-extensions action: update actions version	2026-10-20	2024-06-30:2024-09-08;
+mlocati/docker-php-extension-installer	set_output	0	0	not_exposed							2026-10-20	
+mlomb/chat-analytics	artifact_v3	9	0	after_enforcement	346	f6a3008f73	2025-03-28	Martín Lombardo	no	Updated artifact actions to v4	2025-10-11	2025-01-30:2025-03-28;
+mlomb/chat-analytics	set_output	0	0	not_exposed							2025-10-11	
+moov-io/iso8583	artifact_v3	2	0	after_enforcement	125	05749a4966	2024-08-19	renovate[bot]	yes	chore(deps): update github artifact actions to v4 (#319)	2026-10-21	2024-06-30:2024-08-19;
+moov-io/iso8583	set_output	1	0	during_warning	1407	15f915bfb2	2026-08-18	Adam Shannon	no	security: enable weekly scanners and fix alerts	2026-10-21	
+mthom/scryer-prolog	artifact_v3	7	0	during_warning	285	f69c58c6b6	2025-01-26	Mark Thom	no	Merge pull request #2793 from Skgland/fix-ci	2026-10-22	2025-01-30:2025-01-26;
+mthom/scryer-prolog	set_output	0	0	not_exposed							2026-10-22	
+mwouts/jupytext	artifact_v3	2	0	during_warning	116	070ba88715	2024-08-10	Mahendra Paipuri	no	Retry flaky UI tests in CI (#1262)	2026-10-21	2025-01-30:2024-08-10;
+mwouts/jupytext	set_output	0	0	not_exposed							2026-10-21	
+neo4j/graphql	artifact_v3	0	0	not_exposed							2026-10-27	
+neo4j/graphql	set_output	9	0	during_warning	24	ac7ef9c856	2022-11-04	Michael Webb	no	Merge pull request #2366 from mjfwebb/replace-deprecated-workflow-command	2026-10-27	
+nodemcu/nodemcu-firmware	artifact_v3	8	1	never (as of collection)							2025-08-28	
+nodemcu/nodemcu-firmware	set_output	0	0	not_exposed							2025-08-28	
+obgm/libcoap	artifact_v3	1	0	during_warning	23	e599e25d6e	2024-05-09	Jon Shallow	no	oss-fuzz: Fix issue in coap_pdu_parse_opt()	2026-10-27	2025-01-30:2024-05-09;
+obgm/libcoap	set_output	0	0	not_exposed							2026-10-27	
+oetiker/rrdtool-1.x	artifact_v3	1	0	during_warning	111	af3696390e	2024-08-05	Tobias Oetiker	no	Merge pull request #1263 from c72578/2024-08-03_Update_GitHub_Actions	2026-10-23	2025-01-30:2024-08-05;
+oetiker/rrdtool-1.x	set_output	1	0	during_warning	1314	e74c3356d1	2026-05-17	Tobias Oetiker	no	Merge pull request #1316 from oetiker/release-workflow-automation	2026-10-23	
+openedx/edx-platform	artifact_v3	6	0	during_warning	48	b93d3ac8be	2024-06-03	Feanil Patel	no	Merge pull request #34708 from irtazaakram/update-github-actions	2026-10-27	2025-01-30:2024-06-03;
+openedx/edx-platform	set_output	10	0	during_warning	631	7da377eb12	2024-07-03	Feanil Patel	no	Merge pull request #35079 from huniafatima-arbi/huniafatima/replace-deprecated-github-actions	2026-10-27	
+opensumi/core	artifact_v3	1	0	after_enforcement	295	5472a76aa5	2025-02-05	大表哥	no	feat: enhance file search service to handle absolute paths and update… (#4334)	2026-10-15	2025-01-30:2025-02-05;
+opensumi/core	set_output	0	0	not_exposed							2026-10-15	
+opentracing-contrib/nginx-opentracing	artifact_v3	0	0	not_exposed							2026-10-28	
+opentracing-contrib/nginx-opentracing	set_output	8	0	during_warning	626	37ca1a976c	2024-06-28	Luca Comellini	no	Fixes for dependabot and automated builds (#642)	2026-10-28	
+panda-re/panda	artifact_v3	2	0	during_warning	106	fda98c7d2b	2024-07-31	Andrew Fasano	no	Bump Actions versions to the latest version	2026-06-08	2025-01-30:2024-07-31;
+panda-re/panda	set_output	0	0	not_exposed							2026-06-08	
+pencil2d/pencil	artifact_v3	1	0	after_enforcement	291	5f11eac302	2025-02-01	Matt Chang	no	Bump action/upload-artifact to v4	2026-10-26	2025-01-30:2025-02-01;
+pencil2d/pencil	set_output	0	0	not_exposed							2026-10-26	
+pfrest/pfSense-pkg-RESTAPI	artifact_v3	2	0	during_warning	12	c963af58e4	2024-04-28	Jared Hendrickson	no	Merge pull request #455 from jaredhendrickson13/dependabot/github_actions/actions/upload-artifact-4	2026-10-21	2025-01-30:2024-04-28;
+pfrest/pfSense-pkg-RESTAPI	set_output	0	0	not_exposed							2026-10-21	
+pinterest/gestalt	artifact_v3	1	0	during_warning	24	998d43e131	2024-05-10	Jack Hsu	no	Internal: Upgrade GitHub actions to v4 (#3562)	2026-10-05	2024-06-30:2024-05-10;
+pinterest/gestalt	set_output	2	3	never (as of collection)							2026-10-05	
+plank/laravel-mediable	artifact_v3	0	0	not_exposed							2026-10-11	
+plank/laravel-mediable	set_output	1	0	during_warning	543	c10eaf26ad	2024-04-06	Sean Fraser	no	Merge pull request #343 from plank/v6	2026-10-11	
+pocoproject/poco	artifact_v3	2	0	after_enforcement	294	269b3b4087	2025-02-04	Matej Kenda	no	"fix(github): Use ""upload-artifact@v4"":"	2026-10-26	2025-01-30:2025-02-04;
+pocoproject/poco	set_output	0	0	not_exposed							2026-10-26	
+projectdiscovery/shuffledns	artifact_v3	0	0	not_exposed							2026-01-21	
+projectdiscovery/shuffledns	set_output	1	0	during_warning	208	db34c6634c	2023-05-07	Sandeep Singh	no	Merge pull request #226 from projectdiscovery/dev	2026-01-21	
+pycontribs/jira	artifact_v3	0	0	not_exposed							2026-05-01	
+pycontribs/jira	set_output	2	0	during_warning	331	c48951f601	2023-09-07	Sorin Sbarnea	no	gha: use pip caching from setup-python (#1731)	2026-05-01	
+python-poetry/poetry	artifact_v3	0	0	not_exposed							2026-10-28	
+python-poetry/poetry	set_output	3	0	during_warning	22	5b10800e5e	2022-11-02	Mathieu Kniewallner	no	ci: use env vars for exporting output	2026-10-28	
+qiskit/qiskit-aer	artifact_v3	15	0	during_warning	274	4a6fd11a36	2025-01-15	gadial	no	Adds unique name for upload-artifact jobs (#2285)	2026-10-27	2024-06-30:2024-04-19;2025-01-30:2025-01-15;
+qiskit/qiskit-aer	set_output	0	0	not_exposed							2026-10-27	
+relative-ci/bundle-stats	artifact_v3	0	0	not_exposed							2026-10-28	
+relative-ci/bundle-stats	set_output	1	0	during_warning	286	3498b8c28a	2023-07-24	Viorel Cojocaru	no	Merge pull request #3622 from relative-ci/update-dev-node-env	2026-10-28	
+rethinkdb/rethinkdb	artifact_v3	7	0	after_enforcement	432	a6c7cbc345	2025-06-22	Gábor Boros	no	build: fix database build pipeline (#7166)	2026-10-26	2025-01-30:2025-06-22;
+rethinkdb/rethinkdb	set_output	0	0	not_exposed							2026-10-26	
+roslynpad/roslynpad	artifact_v3	1	0	after_enforcement	152	3b958bbbd0	2024-09-15	Eli Arbel	no	Fix build	2026-10-27	2024-06-30:2024-09-15;
+roslynpad/roslynpad	set_output	0	0	not_exposed							2026-10-27	
+runatlantis/atlantis	artifact_v3	0	0	not_exposed							2026-10-27	
+runatlantis/atlantis	set_output	1	0	during_warning	102	74aaa44083	2023-01-21	nitrocode	no	chore(actions): deprecate set-output (#3019)	2026-10-27	
+simonkagstrom/kcov	artifact_v3	2	0	after_enforcement	82	138d8aa4d8	2024-07-07	Simon Kågström	no	Merge pull request #440 from williamdes/ci-and-docker	2026-10-23	2024-06-30:2024-07-07;
+simonkagstrom/kcov	set_output	0	0	not_exposed							2026-10-23	
+slimevr/slimevr-tracker-esp	artifact_v3	1	0	after_enforcement	162	dbce4cb809	2024-09-25	Butterscotch!	no	Add dependabot & update workflows (#344)	2026-10-20	2024-06-30:2024-09-25;
+slimevr/slimevr-tracker-esp	set_output	0	0	not_exposed							2026-10-20	
+StanfordVL/BEHAVIOR-1K	artifact_v3	2	0	during_warning	285	00d8193502	2025-01-26	Cem Gökmen	no	Merge pull request #1084 from StanfordVL/fix-ci	2026-10-28	2025-01-30:2025-01-26;
+StanfordVL/BEHAVIOR-1K	set_output	0	0	not_exposed							2026-10-28	
+steamgriddb/steam-rom-manager	artifact_v3	5	0	during_warning	55	071e0f1087	2024-06-10	cbartondock	no	Merge branch 'master' of github.com:SteamGridDB/steam-rom-manager	2026-10-11	2025-01-30:2024-06-10;
+steamgriddb/steam-rom-manager	set_output	0	0	not_exposed							2026-10-11	
+stellar/go	artifact_v3	0	0	not_exposed							2025-12-10	
+stellar/go	set_output	1	0	during_warning	17	9308f95310	2022-10-28	Alfonso Acosta	no	Remove (unused) stellar/horizon docker image push (#4670)	2025-12-10	
+stripe/stripe-react-native	artifact_v3	0	0	not_exposed							2026-10-27	
+stripe/stripe-react-native	set_output	5	1	never (as of collection)							2026-10-27	
+sudara/pamplejuce	artifact_v3	4	0	during_warning	10	3a5f42107c	2024-04-26	Sudara	no	Merge pull request #88 from sudara/update_actions	2026-08-16	2025-01-30:2024-04-26;
+sudara/pamplejuce	set_output	0	0	not_exposed							2026-08-16	
+surgioproject/surgio	artifact_v3	0	0	not_exposed							2026-10-24	
+surgioproject/surgio	set_output	1	0	during_warning	771	da52198f99	2024-11-20	Roy Li	no	chore: update CI workflow to include Node.js 22 and optimize pnpm caching	2026-10-24	
+tailwarden/komiser	artifact_v3	2	1	never (as of collection)							2026-09-10	
+tailwarden/komiser	set_output	0	0	not_exposed							2026-09-10	
+tencent/puerts	artifact_v3	8	0	after_enforcement	309	ca23fda0f1	2025-02-19	johnche	no	[unity]download-artifact升级到v4	2026-10-22	2024-06-30:2024-09-04;2025-01-30:2025-02-19;
+tencent/puerts	set_output	0	0	not_exposed							2026-10-22	
+tendermint/tendermint	artifact_v3	12	12	never (as of collection)							2025-03-06	
+tendermint/tendermint	set_output	2	2	never (as of collection)							2025-03-06	
+thephpleague/csv	artifact_v3	0	0	not_exposed							2026-10-28	
+thephpleague/csv	set_output	1	0	during_warning	85	dbd82c3cc7	2023-01-04	ignace nyamagana butera	no	dependencies update	2026-10-28	
+tidyverse/dtplyr	artifact_v3	1	0	during_warning	142	564fccceb8	2024-09-05	Hadley Wickham	no	Upkeep 2024-09 (#479)	2026-02-11	2025-01-30:2024-09-05;
+tidyverse/dtplyr	set_output	0	0	not_exposed							2026-02-11	
+timber/timber	artifact_v3	0	0	not_exposed							2026-10-01	
+timber/timber	set_output	1	0	during_warning	31	17183b7cad	2022-11-11	Nicolas Lemoine	no	Merge pull request #2665 from timber/2.x-lowest-dependencies	2026-10-01	
+tlecomte/friture	artifact_v3	8	0	after_enforcement	195	2ba32e6f54	2024-10-28	Timothée Lecomte	no	chore(github): move to artifact v4	2026-08-11	2024-06-30:2024-10-28;
+tlecomte/friture	set_output	0	0	not_exposed							2026-08-11	
+tonihele/openkeeper	artifact_v3	1	0	during_warning	166	b7c2655092	2024-09-29	Trass3r	no	add automatic 'latest' release (#469)	2026-10-26	2025-01-30:2024-09-29;
+tonihele/openkeeper	set_output	0	0	not_exposed							2026-10-26	
+unicode-org/cldr	artifact_v3	0	0	not_exposed							2026-10-24	
+unicode-org/cldr	set_output	1	0	during_warning	647	6267131493	2024-07-19	Steven R. Loomis	no	CLDR-17184 fix some warnings in staging and prod actions (#3870)	2026-10-24	
+unifyai/ivy	artifact_v3	15	0	during_warning	171	84d6e3bb4f	2024-10-04	Sam Armstrong	no	feat: add QA tests to release pipeline and CI (#28833)	2026-10-21	2025-01-30:2024-10-04;
+unifyai/ivy	set_output	11	0	during_warning	978	560966a033	2025-06-15	Sam Armstrong	no	refactor: remove redundant workflows (#28876)	2026-10-21	
+unitystation/unitystation	artifact_v3	5	2	never (as of collection)							2026-10-28	
+unitystation/unitystation	set_output	0	1	not_exposed							2026-10-28	
+valyala/fasthttp	artifact_v3	0	0	not_exposed							2026-10-28	
+valyala/fasthttp	set_output	5	0	during_warning	158	faf565e222	2023-03-18	Oleksandr Redko	no	GitHub actions/setup-go@v4 (#1520)	2026-10-28	
+ventoy/ventoy	artifact_v3	5	0	after_enforcement	300	ee994a0569	2025-02-10	longpanda	no	github ai version update	2026-10-22	2025-01-30:2025-02-10;
+ventoy/ventoy	set_output	0	0	not_exposed							2026-10-22	
+visgl/deck.gl	artifact_v3	0	0	not_exposed							2026-10-26	
+visgl/deck.gl	set_output	1	0	during_warning	563	5c1d0b0e8c	2024-04-26	Xiaoji Chen	no	chore: update CI workflows (#8837)	2026-10-26	
+weewx/weewx	artifact_v3	1	0	during_warning	37	85e5ac832d	2024-05-23	Matthew Wall	no	Merge branch 'development' into mwall_pkg	2026-10-25	2025-01-30:2024-05-23;
+weewx/weewx	set_output	0	0	not_exposed							2026-10-25	
+wojciechmula/pyahocorasick	artifact_v3	2	0	after_enforcement	423	9508c90968	2025-06-13	Ayan Sinha Mahapatra	no	Merge pull request #194 from AyanSinhaMahapatra/support-py-3.13	2026-04-27	2024-06-30:2025-06-13;
+wojciechmula/pyahocorasick	set_output	0	0	not_exposed							2026-04-27	
+wp-graphql/wp-graphql-woocommerce	artifact_v3	1	0	after_enforcement	237	2f3cef08b7	2024-12-09	Geoff Taylor	no	devops: package-for-release.yml updated (#910)	2026-06-30	2024-06-30:2024-12-09;
+wp-graphql/wp-graphql-woocommerce	set_output	1	1	never (as of collection)							2026-06-30	
+zdoom/raze	artifact_v3	2	0	after_enforcement	255	e3a0ec65f7	2024-12-27	Rachael Alexanderson	no	- move appimage workflow to an unused folder	2025-11-19	2024-06-30:2024-12-27;2025-01-30:2024-10-10;
+zdoom/raze	set_output	0	0	not_exposed							2025-11-19	
+zenorogue/hyperrogue	artifact_v3	3	0	during_warning	12	9372ecb8f8	2024-04-28	Zeno Rogue	no	github_ci:: removed Android CI for now	2026-09-17	2024-06-30:2024-04-28;
+zenorogue/hyperrogue	set_output	0	0	not_exposed							2026-09-17	
+zeux/pugixml	artifact_v3	1	0	after_enforcement	306	a340834408	2025-02-16	Arseny Kapoulkine	no	Update upload-artifact to v4 to fix build due to deprecation	2026-10-20	2025-01-30:2025-02-16;
+zeux/pugixml	set_output	0	0	not_exposed							2026-10-20	

@@ -20,7 +20,15 @@ Sources:
 - A repository is **exposed** if the default branch had at least one active occurrence at T_warn.
 - The default branch at T_warn is the first-parent ancestor of today's `HEAD` with commit date before T_warn.
 - **Migration** = the earliest first-parent commit on the default branch after which no occurrence remains.
-- For artifact actions, if only v1/v2 occurrences existed at T_warn, the v1/v2 enforcement date is used.
+- Artifact actions are split into version groups with their own cutoff (v1/v2: 2024-06-30, v3: 2025-01-30).
+  A migration counts as **after enforcement** if any group present at T_warn disappeared only after its group's cutoff.
+
+## Observations
+
+- Some commits quote the v3 failure message before the 30 January 2025 cutoff (microsoft/vcpkg-tool on
+  2025-01-17, bazelbuild/rules_pkg reports failures "as of January 22, 2025"). This suggests brownouts
+  (temporary planned failures) before the final cutoff, although the changelog does not mention them.
+  To be verified before the analysis treats 2025-01-30 as the moment of breakage.
 
 ## Candidate events (not yet included)
 
