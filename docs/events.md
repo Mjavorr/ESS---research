@@ -23,12 +23,20 @@ Sources:
 - Artifact actions are split into version groups with their own cutoff (v1/v2: 2024-06-30, v3: 2025-01-30).
   A migration counts as **after enforcement** if any group present at T_warn disappeared only after its group's cutoff.
 
-## Observations
+## Brownouts (artifact actions v3)
 
-- Some commits quote the v3 failure message before the 30 January 2025 cutoff (microsoft/vcpkg-tool on
-  2025-01-17, bazelbuild/rules_pkg reports failures "as of January 22, 2025"). This suggests brownouts
-  (temporary planned failures) before the final cutoff, although the changelog does not mention them.
-  To be verified before the analysis treats 2025-01-30 as the moment of breakage.
+Before the final cutoff GitHub ran three announced brownouts, during which v3 workflows failed
+([community discussion #142581](https://github.com/orgs/community/discussions/142581), post of 2024-10-25, updated 2024-11-22):
+
+| Date | Window (EST) |
+| --- | --- |
+| 2025-01-09 | 12:00–13:00 |
+| 2025-01-16 | 10:00–14:00 |
+| 2025-01-23 | 09:00–17:00 |
+
+The data agrees: microsoft/vcpkg-tool migrated on 2025-01-17 quoting the failure message, the day
+after the second brownout. For the analysis, the first brownout (2025-01-09) is the first moment a
+v3 workflow could break; 2025-01-30 remains the final cutoff. No brownouts were found for v1/v2.
 
 ## Candidate events (not yet included)
 

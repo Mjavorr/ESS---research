@@ -1,0 +1,19 @@
+repo	artifact_days	artifact_phase	set_output_days	set_output_phase
+aio-libs/aiokafka	193	after cutoff (broken)	1430	after postponement
+airbytehq/airbyte	268	after cutoff (broken)	799	after postponement
+altair-graphql/altair	151	after cutoff (broken)	>1473	not migrated
+ardupilot/ardupilot	167	before any breakage	112	before announced cutoff
+cog-creators/red-discordbot	266	before any breakage	31	before announced cutoff
+datadog/dd-trace-js	148	after cutoff (broken)	444	after postponement
+getsentry/sentry	97	before any breakage	1	before announced cutoff
+guysoft/octopi	203	after cutoff (broken)	1391	after postponement
+johnnymorganz/stylua	648	after cutoff (broken)	>1461	not migrated
+k4yt3x/video2x	175	after cutoff (broken)	734	after postponement
+lucide-icons/lucide	318	after cutoff (broken)	264	between cutoff date and postponement
+moov-io/iso8583	125	after cutoff (broken)	1407	after postponement
+oetiker/rrdtool-1.x	111	before any breakage	1314	after postponement
+openedx/edx-platform	48	before any breakage	631	after postponement
+pinterest/gestalt	24	before any breakage	>1455	not migrated
+tendermint/tendermint	>324	not migrated	>877	not migrated
+unifyai/ivy	171	before any breakage	978	after postponement
+wp-graphql/wp-graphql-woocommerce	237	after cutoff (broken)	>1358	not migrated

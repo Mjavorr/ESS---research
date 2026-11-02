@@ -1,0 +1,8 @@
+repo	artifact_days	artifact_phase	set_output_days	set_output_phase
+aio-libs/aiohttp	260	before any breakage	556	after postponement
+apache/arrow	142	before any breakage	6	before announced cutoff
+discourse/discourse	209	before any breakage	31	before announced cutoff
+dotnet/runtime	13	before any breakage	>1463	not migrated
+expressjs/express	295	after cutoff (broken)	526	after postponement
+git/git	153	after cutoff (broken)	60	before announced cutoff
+httpie/cli	>245	not migrated	>798	not migrated
