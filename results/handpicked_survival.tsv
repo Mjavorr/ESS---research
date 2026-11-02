@@ -1,0 +1,4 @@
+event	exposed	migrated	censored	km_median_days	migrated_by_30d_%	by_90d_%	by_180d_%	by_365d_%	by_730d_%	migrations_by_bot_author
+artifact_v3	16	15	1	184	18.8	25.0	43.8	92.5	100.0	4
+set_output	27	25	2	51	44.4	63.0	77.8	81.5	88.9	0
+log-rank artifact vs set-output	chi2=0.62	p=0.431

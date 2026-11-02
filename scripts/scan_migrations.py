@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pilot re-scan: exposure and migration timing for two GitHub Actions deprecations.
+"""Exposure and migration timing for GitHub Actions deprecations.
 
 For every cloned repository it reports, per deprecation event:
   - how many active (non-commented) occurrences existed on the default branch
