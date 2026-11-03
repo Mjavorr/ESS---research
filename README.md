@@ -27,6 +27,8 @@ scripts/
   scan_migrations.py    exposure at T_warn and migration commit per repository and event
   collect_evidence.py   diff + commit message of each migration, for manual validation
   analyze_timing.py     RQ1/RQ2: phases, Kaplan-Meier curves, log-rank test, figures
+  extract_features.py   RQ3/RQ4: project characteristics at T_warn, author of each migration
+  analyze_factors.py    RQ3/RQ4: timely vs late comparison, Cox model, authorship shares
 results/                tables and figures produced by analyze_timing.py (sample_* and handpicked_*)
 data/sample/            main study sample (random)
   seart_export_2026-10-28.csv.gz   SEART GitHub Search export (sampling frame, 22,608 repos)
@@ -36,6 +38,7 @@ data/sample/            main study sample (random)
   scan_all.tsv          scanner output for the 499 cloned repos
   exposed.tsv           the 123 repos exposed to at least one event
   validation_subsample.tsv  manual validation of 50 random exposed cases (25 per event)
+  features.tsv          RQ3/RQ4 variables per exposed (repository, event) pair
 data/handpicked/        hand-picked set of 90 popular repos used to develop and validate the detection rules
   repos.txt, scan_all.tsv, exposed.tsv
   validation.tsv        manual validation of every exposed case in this set (43 rows)
@@ -73,6 +76,8 @@ scripts/clone_repos.sh batch1.txt clones 12
 python3 scripts/scan_migrations.py clones scan.tsv
 python3 scripts/collect_evidence.py clones data/sample/exposed.tsv > evidence.txt
 python3 scripts/analyze_timing.py data/sample/scan_all.tsv results sample 2026-10-28
+python3 scripts/extract_features.py clones data/sample/scan_all.tsv features.tsv data/sample/frame_shuffled.tsv
+python3 scripts/analyze_factors.py data/sample/scan_all.tsv data/sample/features.tsv results sample 2026-10-28
 ```
 
 Results depend on the state of the repositories at collection time: the sample was cloned and
@@ -107,6 +112,33 @@ Manual validation of 50 random exposed cases: detection correct in all 50. Two o
 repositories mixing v2 and v3 were judged by the v3 cutoff only; the scanner now applies each version
 group's own cutoff (3 repositories changed category).
 
+**RQ3, which projects migrate in time** (`results/sample_rq3_*.tsv`; "in time" = before anything broke):
+
+- Artifact actions: projects that migrated in time were more active before the warning (median 126 vs
+  62 commits in the preceding 6 months, Mann-Whitney p = 0.013); in the Cox model each e-fold increase
+  in prior activity raises the migration rate by 18% (HR 1.18, 95% CI 1.04–1.34).
+- `set-output`: projects with Dependabot or Renovate configured migrated faster (HR 2.39, 95% CI
+  1.21–4.72), although no `set-output` migration was made by a bot: the tools seem to mark projects
+  that maintain their CI, not to do the work.
+- Stars, contributors, age and the number of occurrences show no clear effect. With 18 descriptive
+  tests, single p-values around 0.01 must be read with care.
+- Only 5 of the 84 artifact-exposed repositories had Dependabot for Actions at the warning: projects
+  with it had mostly moved to v4 before the deprecation and were never exposed.
+
+**RQ4, who migrates** (`results/sample_rq4_authors.tsv`):
+
+| | bot | core maintainer | external contributor |
+| --- | --- | --- | --- |
+| Artifact actions (79 migrations) | 4 (5%) | 57 (72%) | 18 (23%) |
+| … before any breakage (26) | 3 | 15 | 8 |
+| … after the cutoff (49) | 1 | 39 | 9 |
+| `set-output` (48 migrations) | 0 | 45 (94%) | 3 (6%) |
+
+Authors are classified from the default-branch history of the year before the migration: core if they
+authored ≥ 10 commits, ≥ 10% of all commits (and ≥ 3), or a merge commit, or if the change was merged
+from a branch of the repository itself; bots by name. For merge commits the author of the inner commit
+that changed the deprecated lines is used.
+
 The hand-picked set of 90 popular repositories behaves differently: 63% of its artifact migrations
 happened before any breakage and the `set-output` median is 51 days (`results/handpicked_*`).
 
@@ -118,8 +150,10 @@ happened before any breakage and the `set-output` median is 51 days (`results/ha
   later switched its default branch (e.g. expressjs/express from 4.x to 5.x), the migration date
   can be too late; in the hand-picked set such cases are corrected manually in `data/handpicked/validation.tsv`.
 - A fix authored on a development or maintenance branch counts only once it reaches the default branch.
-- For merge commits, the commit author is the person who merged, which hides bots (e.g. a merged
-  Dependabot PR); real authors will be recovered via the GitHub API.
+- Author roles are inferred from git history, not from GitHub's author association (the API is not
+  available to us): a core developer working from a fork with few commits may be labelled external.
+  A branch inside the repository proves write access, a fork does not prove its absence.
+- The Cox models' proportional-hazards assumption has not been tested yet.
 - `set-output` is only detected when used directly in workflow files, not inside third-party actions.
 - Repositories that never migrated are censored at collection time, not treated as non-migrants.
 - The v3 brownouts lasted 1 to 8 hours each; a migration on a brownout day may still predate the failure.

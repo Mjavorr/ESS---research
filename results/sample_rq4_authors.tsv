@@ -1,0 +1,9 @@
+event	phase	migrations	bot	core	external	bot_initiated
+artifact_v3	all migrations	79	4 (5%)	57 (72%)	18 (23%)	4
+artifact_v3	after cutoff (broken)	49	1 (2%)	39 (80%)	9 (18%)	1
+artifact_v3	before any breakage	26	3 (12%)	15 (58%)	8 (31%)	3
+artifact_v3	during brownouts	4	0 (0%)	3 (75%)	1 (25%)	0
+set_output	all migrations	48	0 (0%)	45 (94%)	3 (6%)	0
+set_output	after postponement	22	0 (0%)	19 (86%)	3 (14%)	0
+set_output	before announced cutoff	25	0 (0%)	25 (100%)	0 (0%)	0
+set_output	between cutoff date and postponement	1	0 (0%)	1 (100%)	0 (0%)	0
