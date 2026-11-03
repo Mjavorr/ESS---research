@@ -1,0 +1,142 @@
+repo	event	category	days_from_warning	occurrences	stars	contributors	commits	language	age_years	dependabot_actions	renovate	commits_6m	authors_6m	workflow_files	change_commit	is_merge	author	author_kind	merged_by	same_repo_branch	bot_initiated
+academysoftwarefoundation/openfx	artifact_v3	during_warning	224	2	580	19	847	C++	12.4	0	0	97	3	1	3aa2b55222	0	Gary Oberbrunner	core		0	0
+actions/cache	set_output	during_warning	55	1	5491	140	770	TypeScript	3.0	0	0	118	17	7	04b13caea4	1	jongwooo	core	Sankalp Kotewar	0	0
+adaway/adaway	set_output	never (as of collection)		1	9448	50	4970	C	10.2	0	0	304	4	5							
+aio-libs/aiokafka	artifact_v3	after_enforcement	193	7	1405	79	1399	Python	9.5	0	0	85	8	3	f6c79a086f	0	Denis Otkidach	core		0	0
+aio-libs/aiokafka	set_output	during_warning	1430	4	1405	79	1399	Python	7.9	0	0	6	4	2	00964835eb	0	Denis Otkidach	core		0	0
+airbnb/visx	set_output	during_warning	1116	2	20911	162	3381	TypeScript	5.6	0	0	56	15	2	451b6c5f94	0	Harrison Shoff	core		0	0
+airbytehq/airbyte	artifact_v3	after_enforcement	268	3	22239	377	54602	Python	3.7	0	0	2222	178	38	9177c79c48	0	Patrick Nilan	core		0	0
+airbytehq/airbyte	set_output	during_warning	799	12	22239	377	54602	Python	2.2	0	0	2433	294	28	c4f6fdc932	0	"Aaron (""AJ"") Steers"	core		0	0
+alexta69/metube	set_output	during_warning	1251	1	15120	95	925	Python	2.9	0	0	52	9	2	7fa1fc7938	0	Alex Shnitman	core		0	0
+altair-graphql/altair	artifact_v3	after_enforcement	151	2	5434	83	6634	TypeScript	7.1	0	0	360	4	9	42ed9d99de	0	Samuel Imolorhe	core		0	0
+altair-graphql/altair	set_output	never (as of collection)		1	5434	83	6634	TypeScript	5.5	0	0	129	11	9							
+amphp/http-server	set_output	never (as of collection)		1	1326	47	2252	PHP	9.7	0	0	20	2	1							
+anrieff/libcpuid	artifact_v3	during_warning	12	2	538	39	880	C	9.9	0	0	11	2	3	e965155651	0	The Tumultuous Unicorn Of Darkness	core		0	0
+ardupilot/ardupilot	artifact_v3	during_warning	167	19	16043	311	74472	C++	11.3	0	0	2651	130	24	72016df914	0	Peter Barker	core		0	0
+ardupilot/ardupilot	set_output	during_warning	112	21	16043	311	74472	C++	9.8	0	0	2377	99	17	161d360dc3	0	Pierre Kancir	core		0	0
+artifexsoftware/mupdf	artifact_v3	after_enforcement	339	1	3017	40	13109	C	8.8	0	0	424	6	3	eac0ffd2dc	0	Julian Smith	core		0	0
+belphemur/soundswitch	set_output	during_warning	117	1	3468	98	5676	C#	7.2	1	0	158	17	3	679c01c48e	0	Antoine Aflalo	core		0	0
+bitnami/sealed-secrets	set_output	during_warning	13	2	9317	183	1703	Go	5.4	0	0	106	31	6	0634f9c843	0	josvaz	core		0	0
+c7-game/prototype	artifact_v3	after_enforcement	248	3	533	26	2373	C#	3.1	0	0	8	3	4	9fb9101813	0	Travis	core		0	0
+carguo/gsy_github_app_flutter	artifact_v3	after_enforcement	341	2	15501	10	1261	Dart	5.7	0	0	6	1	1	2a2cc79baf	0	guoshuyu	core		0	0
+cherrypy/cherrypy	artifact_v3	after_enforcement	374	6	1946	122	4723	Python	8.0	0	0	33	8	1	25d7a16f2c	0	Sviatoslav Sydorenko	core		0	0
+cleverraven/cataclysm-dda	set_output	during_warning	103	20	13341	357	130041	C++	10.0	0	0	4477	311	24	4104d317d4	0	Binrui Dong	core		0	0
+codingcommons/typesafe-i18n	artifact_v3	after_enforcement	665	1	2450	35	1592	TypeScript	3.3	0	0	0	0	13	c89bf827fc	0	Benjamin Strasser	external		0	0
+cog-creators/red-discordbot	artifact_v3	during_warning	266	7	5752	180	3073	Python	8.3	0	0	63	21	11	22888f8014	0	Kowlin	external		0	0
+cog-creators/red-discordbot	set_output	during_warning	31	3	5752	180	3073	Python	6.8	0	0	52	16	9	0f20f15c26	0	Jakub Kuczys	core		0	0
+conventional-changelog/conventional-changelog	set_output	during_warning	954	1	8521	158	1923	TypeScript	8.8	0	0	3	3	2	557d74edf5	0	dangreen	core		0	0
+cyberbotics/webots_ros2	artifact_v3	after_enforcement	250	2	548	48	1636	C	4.7	0	0	38	8	5	4f63238bc6	0	MNikoliCC	external		0	0
+dani-garcia/vaultwarden	set_output	during_warning	29	2	69615	194	3124	Rust	4.6	0	0	187	15	3	b010dde661	1	BlackDex	core	Daniel García	0	0
+datadog/dd-trace-js	artifact_v3	after_enforcement	148	3	840	272	6784	JavaScript	6.2	0	0	313	34	19	8490eae520	0	Ugaitz Urien	core		0	0
+datadog/dd-trace-js	set_output	during_warning	444	4	840	272	6784	JavaScript	4.7	0	0	237	20	12	e84c8e4f10	0	Stephen Belanger	core		0	0
+dflook/terraform-github-actions	set_output	during_warning	1	3	992	16	814	Python	2.3	0	0	62	4	25	cc252bddc3	1	Daniel Flook	core	Daniel Flook	1	0
+dlsc-software-consulting-gmbh/gemsfx	artifact_v3	after_enforcement	290	1	623	20	1807	Java	4.6	0	0	261	4	3	7076e598b9	0	Dirk Lemmermann	core		0	0
+draios/sysdig-inspect	artifact_v3	after_enforcement	822	11	1010	17	720	JavaScript	6.8	0	0	6	3	2	51eaa36112	0	Roberto Scolaro	external		0	0
+dyninst/dyninst	artifact_v3	after_enforcement	163	5	840	63	21621	C	8.0	0	0	111	5	11	e979c81711	0	kupsch	core		0	0
+effector/effector	artifact_v3	after_enforcement	150	4	4854	145	8201	TypeScript	6.1	0	0	161	19	8	a07a3b9b71	0	Dmitry Boldyrev	core		0	0
+elastic/apm-agent-java	artifact_v3	during_warning	149	2	593	100	3560	Java	6.2	1	0	154	18	20	9a12b98ee9	0	Jan Calanog	external		0	0
+eraser-dev/eraser	set_output	during_warning	23	2	624	38	735	Go	1.4	1	0	173	21	5	c55d81b7c0	0	Peter Engelbert	core		0	0
+facebook/mvfst	artifact_v3	after_enforcement	151	3	1665	278	10229	C++	6.0	0	0	427	51	3	427d8ec34a	0	Alex Hornby	core		0	0
+fairy-stockfish/fairy-stockfish	artifact_v3	during_warning	258	3	917	187	6676	C++	5.8	0	0	23	7	5	c2b61bb161	0	yjf2002ghty	core		0	0
+fenics/dolfinx	set_output	during_warning	6	10	1220	113	28749	C++	4.5	0	0	170	21	10	d88b0dce9e	0	Jack S. Hale	core		0	0
+fiduswriter/fiduswriter	artifact_v3	after_enforcement	299	1	569	28	6758	JavaScript	10.7	0	0	60	2	1	217e5d2533	1	Johannes Wilm	core	Johannes Wilm	1	0
+flxzt/rnote	artifact_v3	during_warning	219	2	11804	82	2393	Rust	2.7	0	0	177	15	4	c8f283ce5b	0	Kneemund	external		0	0
+getsentry/sentry	artifact_v3	during_warning	97	2	45596	355	112792	Python	13.6	0	0	7568	167	30	6d95cf5654	0	Matthew T	core		0	0
+getsentry/sentry	set_output	during_warning	1	4	45596	355	112792	Python	12.1	0	0	4752	150	24	efae4c9d9b	0	anthony sottile	core		0	0
+getsentry/sentry-native	artifact_v3	during_warning	36	1	573	102	1755	C	5.1	0	0	33	11	4	65446506fd	0	Markus Hintersteiner	external		0	0
+goosemod/openasar	artifact_v3	after_enforcement	211	4	3000	12	864	JavaScript	2.4	0	0	15	4	1	ef44708496	0	Oliver Medhurst	core		0	0
+gradle/gradle	set_output	during_warning	384	1	18897	343	137458	Groovy	13.1	0	0	4482	122	7	a27aaffe12	1	Jongwoo Han	external	bot-teamcity	0	0
+guysoft/octopi	artifact_v3	after_enforcement	203	1	2656	55	712	Shell	10.8	0	0	6	2	1	0cf9e406c3	0	Guy Sheffer	core		0	0
+guysoft/octopi	set_output	during_warning	1391	1	2656	55	712	Shell	9.3	0	0	14	3	1	b5b98e2432	1	Guy Sheffer	core	Guy Sheffer	1	0
+halfhp/androidplot	artifact_v3	after_enforcement	873	2	533	20	572	Java	13.1	0	0	0	0	1	11f9fc43fc	0	Nick Fellows	external		0	0
+hbldh/bleak	artifact_v3	after_enforcement	172	1	2564	98	1800	Python	6.0	0	0	15	8	4	a2ee6eeb13	1	Marc Mueller	core	David Lechner	1	0
+hyperion-project/hyperion.ng	set_output	during_warning	27	5	3883	131	2840	C++	6.3	1	0	49	12	7	06091b0786	0	LordGrey	core		0	0
+iced-rs/iced	artifact_v3	after_enforcement	147	6	31828	313	7220	Rust	4.8	0	0	770	55	7	44235f0c0b	0	Héctor Ramón Jiménez	core		0	0
+icsharpcode/codeconverter	artifact_v3	during_warning	85	6	916	32	3720	C#	6.3	0	0	73	4	1	ccbd778cd1	0	Christoph Wille	core		0	0
+izhangzhihao/intellij-rainbow-brackets	set_output	during_warning	688	3	4660	21	1073	Kotlin	5.0	0	0	49	7	4	1953e6c184	0	张志豪	core		0	0
+jaredhendrickson13/pfsense-api	artifact_v3	during_warning	12	2	773	21	2798	PHP	4.2	0	0	523	6	5	59f8823420	1	dependabot[bot]	bot	Jared Hendrickson	1	1
+jmerle/competitive-companion	set_output	during_warning	192	1	1336	58	1354	TypeScript	4.8	0	0	84	4	1	2309077043	0	Jasper van Merle	core		0	0
+jnwatson/py-lmdb	artifact_v3	after_enforcement	263	11	754	31	1221	C	11.2	0	0	0	0	1	93c0cc4a29	1	Nic Watson	core	Nic Watson	1	0
+johnnymorganz/stylua	artifact_v3	after_enforcement	648	4	2312	55	929	Rust	3.3	0	0	60	9	9	5a550e1e22	0	JohnnyMorganz	core		0	0
+johnnymorganz/stylua	set_output	never (as of collection)		1	2312	55	929	Rust	1.8	0	0	110	14	7							
+jscutlery/semver	set_output	during_warning	112	2	770	41	2953	TypeScript	1.9	0	1	437	15	4	74db148ad1	0	Edouard Bozon	core		0	0
+k4yt3x/video2x	artifact_v3	after_enforcement	175	1	19063	24	1025	C++	6.1	0	0	2	1	2	a7952fc493	0	K4YT3X	external		0	0
+k4yt3x/video2x	set_output	during_warning	734	1	19063	24	1025	C++	4.6	0	0	29	3	2	cd2006b4d9	0	K4YT3X	core		0	0
+klembot/twinejs	artifact_v3	after_enforcement	306	1	2904	63	3198	TypeScript	6.2	0	0	91	15	5	6e7c60d9e8	1	Chris Klimas	core	Chris Klimas	1	0
+kubernetes-client/csharp	artifact_v3	after_enforcement	301	1	1218	123	1098	C#	6.9	1	0	76	13	5	4b19366e72	0	Boshi Lian	core		0	0
+lgug2z/komorebi	set_output	during_warning	735	1	15311	57	1615	Rust	1.2	1	0	139	5	1	58d3086615	0	LGUG2Z	core		0	0
+lightspark/lightspark	set_output	during_warning	148	2	1904	60	9694	C++	12.1	0	0	151	3	2	5cf06f5cb6	0	Ludger Krämer	core		0	0
+liji32/sameboy	artifact_v3	after_enforcement	333	1	2230	74	2822	C	8.0	0	0	114	10	2	e76088cde2	0	Lior Halphon	core		0	0
+lincolnloop/python-qrcode	artifact_v3	after_enforcement	636	2	4872	57	512	Python	12.4	0	0	2	2	1	74da737430	1	Chris Beaven	external	Chris Beaven	0	0
+linux-surface/linux-surface	artifact_v3	after_enforcement	327	15	7847	51	2270	Shell	5.5	0	0	89	4	5	4b678ad16e	0	Maximilian Luz	core		0	0
+locustio/locust	set_output	during_warning	29	1	28219	331	6644	Python	11.6	0	0	277	34	2	59d7cee486	0	Lars Holmberg	core		0	0
+lucide-icons/lucide	artifact_v3	after_enforcement	318	4	25188	412	3055	TypeScript	3.9	0	0	249	35	18	3c23331e9e	0	Eric Fennis	core		0	0
+lucide-icons/lucide	set_output	during_warning	264	4	25188	412	3055	TypeScript	2.3	0	0	238	26	7	7c8f898893	0	Eric Fennis	core		0	0
+maharmstone/btrfs	artifact_v3	never (as of collection)		1	7801	18	5383	C	8.2	0	0	55	2	1							
+matchish/laravel-scout-elasticsearch	set_output	never (as of collection)		1	742	32	694	PHP	3.7	0	0	43	3	1							
+maximegmd/cyberenginetweaks	artifact_v3	after_enforcement	150	1	4808	47	1506	C++	3.3	0	0	65	9	1	82a0885a0c	1	Maxime	core	Maxime	1	0
+mcneel/rhino3dm	set_output	during_warning	99	3	767	36	2631	C#	4.0	0	0	38	6	2	830ba551ab	0	fraguada	core		0	0
+mermaid-js/mermaid	artifact_v3	during_warning	129	2	90788	365	16383	TypeScript	9.5	0	1	1260	94	19	f476a7566c	1	renovate[bot]	bot	Knut Sveidqvist	0	1
+mhammond/pywin32	artifact_v3	after_enforcement	304	4	5621	105	5016	C++	6.5	0	0	60	6	3	373bb5cfad	0	Avasam	core		0	0
+microsoft/vcpkg-tool	artifact_v3	during_warning	276	1	607	239	4164	C++	3.4	0	0	151	19	4	13451b9168	0	Billy O'Neal	core		0	0
+mlocati/docker-php-extension-installer	artifact_v3	after_enforcement	145	2	4990	66	1704	Shell	6.0	0	0	73	10	6	4e8a3a3ff2	0	Michele Locati	core		0	0
+mlomb/chat-analytics	artifact_v3	after_enforcement	346	9	966	11	846	TypeScript	2.7	0	0	28	4	4	f6a3008f73	0	Martín Lombardo	core		0	0
+moov-io/iso8583	artifact_v3	after_enforcement	125	2	535	46	688	Go	3.8	0	1	11	7	3	05749a4966	0	renovate[bot]	bot		0	1
+moov-io/iso8583	set_output	during_warning	1407	1	535	46	688	Go	2.3	0	1	14	7	3	15f915bfb2	0	Adam Shannon	core		0	0
+mthom/scryer-prolog	artifact_v3	during_warning	285	7	2462	56	4720	Rust	7.5	0	0	314	12	2	b74c8139d1	1	Bennet Bleßmann	core	Mark Thom	0	0
+mwouts/jupytext	artifact_v3	during_warning	116	2	7200	95	2639	Python	5.8	0	0	94	7	10	070ba88715	0	Mahendra Paipuri	external		0	0
+neo4j/graphql	set_output	during_warning	24	9	549	61	16129	TypeScript	2.2	0	1	2989	27	40	acaf80c7d9	1	Michael Webb	core	Michael Webb	0	0
+nodemcu/nodemcu-firmware	artifact_v3	never (as of collection)		8	7925	174	2441	C	9.4	0	0	13	7	2							
+obgm/libcoap	artifact_v3	during_warning	23	1	921	88	3439	C	8.7	0	0	75	7	2	e599e25d6e	0	Jon Shallow	core		0	0
+oetiker/rrdtool-1.x	artifact_v3	during_warning	111	1	1120	130	3605	C	11.6	0	0	7	4	6	9f6c6cc0d4	1	Wolfgang Stöggl	core	Tobias Oetiker	0	0
+oetiker/rrdtool-1.x	set_output	during_warning	1314	1	1120	130	3605	C	10.1	0	0	4	3	5	9c70e40d4d	1	Tobias Oetiker	core	Tobias Oetiker	1	0
+openedx/edx-platform	artifact_v3	during_warning	48	6	7987	245	67841	Python	10.9	1	1	878	172	30	e428dd4511	1	Irtaza Akram	core	Feanil Patel	0	0
+openedx/edx-platform	set_output	during_warning	631	10	7987	245	67841	Python	9.4	0	1	840	152	23	41bc954975	1	Hunia Fatima	external	Feanil Patel	0	0
+opensumi/core	artifact_v3	after_enforcement	295	1	3659	85	13812	TypeScript	2.4	1	0	184	23	8	5472a76aa5	0	大表哥	core		0	0
+opentracing-contrib/nginx-opentracing	set_output	during_warning	626	8	513	45	1242	C++	5.0	1	0	63	5	3	37ca1a976c	0	Luca Comellini	core		0	0
+panda-re/panda	artifact_v3	during_warning	106	2	2790	273	56298	C	10.6	0	0	162	25	6	fda98c7d2b	0	Andrew Fasano	core		0	0
+pencil2d/pencil	artifact_v3	after_enforcement	291	1	1812	60	5346	C++	10.8	0	0	21	6	2	5f11eac302	0	Matt Chang	core		0	0
+pfrest/pfSense-pkg-RESTAPI	artifact_v3	during_warning	12	2	855	26	3149	PHP	4.2	0	0	523	6	5	59f8823420	1	dependabot[bot]	bot	Jared Hendrickson	0	1
+pinterest/gestalt	artifact_v3	during_warning	24	1	4377	139	6019	TypeScript	6.2	0	0	469	17	6	998d43e131	0	Jack Hsu	external		0	0
+pinterest/gestalt	set_output	never (as of collection)		2	4377	139	6019	TypeScript	4.6	0	0	669	18	4							
+plank/laravel-mediable	set_output	during_warning	543	1	828	32	537	PHP	6.2	0	0	7	1	1	e57f545735	1	Sean Fraser	core	Sean Fraser	1	0
+pocoproject/poco	artifact_v3	after_enforcement	294	2	9486	235	6550	C++	11.5	0	0	283	32	8	269b3b4087	0	Matej Kenda	core		0	0
+projectdiscovery/shuffledns	set_output	during_warning	208	1	1672	18	851	Go	2.6	1	0	59	6	5	f3f73ab2fb	1	sandeep	core	Sandeep Singh	1	0
+pycontribs/jira	set_output	during_warning	331	2	2137	210	1700	Python	8.3	1	0	74	15	6	c48951f601	0	Sorin Sbarnea	external		0	0
+python-poetry/poetry	set_output	during_warning	22	3	34307	441	3887	Python	4.6	1	0	518	91	5	5b10800e5e	0	Mathieu Kniewallner	core		0	0
+qiskit/qiskit-aer	artifact_v3	during_warning	274	15	703	104	1646	C++	5.3	0	0	64	18	7	4a6fd11a36	0	gadial	external		0	0
+relative-ci/bundle-stats	set_output	during_warning	286	1	674	17	7656	TypeScript	4.7	1	0	153	3	3	babc82cace	1	Vio	core	Viorel Cojocaru	1	0
+rethinkdb/rethinkdb	artifact_v3	after_enforcement	432	7	26989	143	33543	C++	11.5	0	0	7	1	1	a6c7cbc345	0	Gábor Boros	external		0	0
+roslynpad/roslynpad	artifact_v3	after_enforcement	152	1	2829	37	1001	C#	9.0	0	0	89	4	2	3b958bbbd0	0	Eli Arbel	core		0	0
+runatlantis/atlantis	set_output	during_warning	102	1	9333	410	4694	Go	4.7	1	0	153	62	8	74aaa44083	0	nitrocode	core		0	0
+simonkagstrom/kcov	artifact_v3	after_enforcement	82	2	830	70	2211	C++	13.6	0	0	83	4	9	41c568f696	1	William Desportes	external	Simon Kågström	0	0
+slimevr/slimevr-tracker-esp	artifact_v3	after_enforcement	162	1	1085	66	715	C++	3.3	0	0	11	8	2	dbce4cb809	0	Butterscotch!	external		0	0
+StanfordVL/BEHAVIOR-1K	artifact_v3	during_warning	285	2	1758	60	16202	Python	2.3	0	0	2511	25	5	930be38c2b	1	Cem Gökmen	core	Cem Gökmen	1	0
+steamgriddb/steam-rom-manager	artifact_v3	during_warning	55	5	2589	59	2522	TypeScript	7.0	0	0	43	9	4	be02346ab2	1	Matthew Glenn	external	cbartondock	0	0
+stellar/go	set_output	during_warning	17	1	1368	129	4525	Go	6.2	0	0	152	18	7	9308f95310	0	Alfonso Acosta	core		0	0
+stripe/stripe-react-native	set_output	never (as of collection)		5	1429	98	1183	TypeScript	1.8	0	0	143	13	3							
+sudara/pamplejuce	artifact_v3	during_warning	10	4	772	17	603	C++	3.5	1	0	53	4	1	6c1c126e59	1	Sudara	core	Sudara	1	0
+surgioproject/surgio	set_output	during_warning	771	1	1827	38	1596	TypeScript	3.1	0	0	97	4	2	da52198f99	0	Roy Li	core		0	0
+tailwarden/komiser	artifact_v3	never (as of collection)		2	4080	81	2986	Go	6.2	0	0	489	41	5							
+tencent/puerts	artifact_v3	after_enforcement	309	8	6220	133	5063	C++	3.7	0	0	203	24	8	ca23fda0f1	0	johnche	core		0	0
+tendermint/tendermint	artifact_v3	never (as of collection)		12	5864	201	8723	Go	9.9	0	0	0	0	15							
+tendermint/tendermint	set_output	never (as of collection)		2	5864	201	8723	Go	8.4	0	0	107	14	15							
+thephpleague/csv	set_output	during_warning	85	1	3483	72	1705	PHP	8.9	0	0	65	5	3	dbd82c3cc7	0	ignace nyamagana butera	core		0	0
+tidyverse/dtplyr	artifact_v3	during_warning	142	1	673	35	1983	R	8.1	0	0	12	2	4	564fccceb8	0	Hadley Wickham	external		0	0
+timber/timber	set_output	during_warning	31	1	5652	201	7326	PHP	9.8	0	0	199	9	1	a0529a1cd6	1	Nicolas Lemoine	core	Nicolas Lemoine	1	0
+tlecomte/friture	artifact_v3	after_enforcement	195	8	1130	17	1880	Python	15.3	0	0	3	2	3	2ba32e6f54	0	Timothée Lecomte	core		0	0
+tonihele/openkeeper	artifact_v3	during_warning	166	1	509	16	3077	Java	9.7	0	0	46	2	1	b7c2655092	0	Trass3r	core		0	0
+unicode-org/cldr	set_output	during_warning	647	1	1160	117	18612	Java	5.1	1	0	465	22	10	6267131493	0	Steven R. Loomis	core		0	0
+unifyai/ivy	artifact_v3	during_warning	171	15	14170	396	19104	Python	3.2	0	0	1400	107	33	84d6e3bb4f	0	Sam Armstrong	core		0	0
+unifyai/ivy	set_output	during_warning	978	11	14170	396	19104	Python	1.7	0	0	5272	425	36	560966a033	0	Sam Armstrong	core		0	0
+unitystation/unitystation	artifact_v3	never (as of collection)		5	734	218	19969	C#	7.5	0	0	185	10	7							
+valyala/fasthttp	set_output	during_warning	158	5	23491	265	2148	Go	7.0	0	0	30	18	3	faf565e222	0	Oleksandr Redko	core		0	0
+ventoy/ventoy	artifact_v3	after_enforcement	300	5	80278	125	1241	C	4.1	0	0	7	1	2	ee994a0569	0	longpanda	core		0	0
+visgl/deck.gl	set_output	during_warning	563	1	14694	294	5700	TypeScript	6.8	0	0	217	31	3	5c1d0b0e8c	0	Xiaoji Chen	core		0	0
+weewx/weewx	artifact_v3	during_warning	37	1	1207	82	8408	Python	9.2	0	0	764	10	1	ad959463cd	1	Tom Keffer	core	Matthew Wall	0	0
+wojciechmula/pyahocorasick	artifact_v3	after_enforcement	423	2	1100	27	562	C	10.9	0	0	10	2	2	a707ecb708	1	Ayan Sinha Mahapatra	core	Ayan Sinha Mahapatra	0	0
+wp-graphql/wp-graphql-woocommerce	artifact_v3	after_enforcement	237	1	703	45	1274	PHP	5.1	0	0	11	2	4	2f3cef08b7	0	Geoff Taylor	core		0	0
+wp-graphql/wp-graphql-woocommerce	set_output	never (as of collection)		1	703	45	1274	PHP	3.6	0	0	12	3	3							
+zdoom/raze	artifact_v3	after_enforcement	255	2	818	42	21452	C++	4.3	0	0	313	6	2	e3a0ec65f7	0	Rachael Alexanderson	core		0	0
+zenorogue/hyperrogue	artifact_v3	during_warning	12	3	711	24	12627	C++	8.7	0	0	332	3	5	9372ecb8f8	0	Zeno Rogue	core		0	0
+zeux/pugixml	artifact_v3	after_enforcement	306	1	4661	74	1903	C++	11.8	0	0	23	3	2	a340834408	0	Arseny Kapoulkine	core		0	0
