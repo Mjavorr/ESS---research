@@ -58,7 +58,6 @@ iced-rs/iced	artifact_v3	bump	targeted	none	v1
 icsharpcode/codeconverter	artifact_v3	bump	routine	none
 izhangzhihao/intellij-rainbow-brackets	artifact_v3	remove	routine	none	build/release workflows deleted
 izhangzhihao/intellij-rainbow-brackets	set_output	remove	routine	none	same commit
-jaredhendrickson13/pfsense-api	artifact_v3	bump	bot	none	Dependabot
 jmerle/competitive-companion	set_output	replace	incidental	none	switch to pnpm with setup-node cache
 jnwatson/py-lmdb	artifact_v3	bump	targeted	none
 johnnymorganz/stylua	artifact_v3	bump	breakage	none	"Fix large scale test"

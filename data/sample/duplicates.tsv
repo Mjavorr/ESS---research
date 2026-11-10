@@ -1,0 +1,2 @@
+repo	duplicate_of	reason
+jaredhendrickson13/pfsense-api	pfrest/pfSense-pkg-RESTAPI	same repository under its old name in the SEART export (identical HEAD on 2026-10-28)

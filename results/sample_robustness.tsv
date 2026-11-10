@@ -1,21 +1,21 @@
 check	event	item	value	p / detail	verdict
-proportional hazards	artifact_v3	stars	rho=0.13	p=0.242	ok
-proportional hazards	artifact_v3	commits_6m	rho=-0.15	p=0.170	ok
-proportional hazards	artifact_v3	occurrences	rho=-0.01	p=0.906	ok
-proportional hazards	artifact_v3	update_bot	rho=0.47	p=0.000	effect varies over time
+proportional hazards	artifact_v3	stars	rho=0.12	p=0.268	ok
+proportional hazards	artifact_v3	commits_6m	rho=-0.13	p=0.236	ok
+proportional hazards	artifact_v3	occurrences	rho=-0.01	p=0.937	ok
+proportional hazards	artifact_v3	update_bot	rho=0.46	p=0.000	effect varies over time
 proportional hazards	set_output	stars	rho=0.10	p=0.485	ok
 proportional hazards	set_output	commits_6m	rho=-0.14	p=0.332	ok
 proportional hazards	set_output	occurrences	rho=0.04	p=0.798	ok
 proportional hazards	set_output	update_bot	rho=0.50	p=0.000	effect varies over time
-Holm, rq3_descriptive	artifact_v3	stars	p=0.277	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	contributors	p=0.387	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	commits in 6 months before warning	p=0.013	p_holm=0.234	not significant
-Holm, rq3_descriptive	artifact_v3	workflow files	p=0.105	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	deprecated occurrences	p=0.825	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	age (years)	p=0.292	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Dependabot for Actions	p=0.167	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Renovate	p=0.223	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Dependabot or Renovate	p=0.196	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	stars	p=0.351	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	contributors	p=0.277	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	commits in 6 months before warning	p=0.021	p_holm=0.378	not significant
+Holm, rq3_descriptive	artifact_v3	workflow files	p=0.117	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	deprecated occurrences	p=0.807	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	age (years)	p=0.221	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	Dependabot for Actions	p=0.157	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	Renovate	p=0.213	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	Dependabot or Renovate	p=0.191	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	stars	p=0.601	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	contributors	p=0.303	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	commits in 6 months before warning	p=0.108	p_holm=1.000	not significant
@@ -25,14 +25,14 @@ Holm, rq3_descriptive	set_output	age (years)	p=0.562	p_holm=1.000	not significan
 Holm, rq3_descriptive	set_output	Dependabot for Actions	p=0.508	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	Renovate	p=1.000	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	Dependabot or Renovate	p=0.546	p_holm=1.000	not significant
-Holm, rq3_cox	artifact_v3	stars	p=0.060	p_holm=0.360	not significant
-Holm, rq3_cox	artifact_v3	commits_6m	p=0.019	p_holm=0.133	not significant
-Holm, rq3_cox	artifact_v3	occurrences	p=0.586	p_holm=1.000	not significant
-Holm, rq3_cox	artifact_v3	update_bot	p=0.148	p_holm=0.740	not significant
-Holm, rq3_cox	set_output	stars	p=0.155	p_holm=0.740	not significant
+Holm, rq3_cox	artifact_v3	stars	p=0.082	p_holm=0.492	not significant
+Holm, rq3_cox	artifact_v3	commits_6m	p=0.026	p_holm=0.182	not significant
+Holm, rq3_cox	artifact_v3	occurrences	p=0.603	p_holm=1.000	not significant
+Holm, rq3_cox	artifact_v3	update_bot	p=0.130	p_holm=0.650	not significant
+Holm, rq3_cox	set_output	stars	p=0.155	p_holm=0.650	not significant
 Holm, rq3_cox	set_output	commits_6m	p=0.716	p_holm=1.000	not significant
 Holm, rq3_cox	set_output	occurrences	p=0.330	p_holm=0.990	not significant
 Holm, rq3_cox	set_output	update_bot	p=0.012	p_holm=0.096	not significant
-censoring at collection date	artifact_v3	KM median days	224	by 365 d: 84.6%	
+censoring at collection date	artifact_v3	KM median days	224	by 365 d: 84.4%	
 censoring at collection date	set_output	KM median days	384	by 365 d: 49.1%	
-censoring at collection date	both	log-rank	chi2=11.67	p=0.000634	
+censoring at collection date	both	log-rank	chi2=11.31	p=0.00077	

@@ -1,13 +1,13 @@
 event	variable	n_timely	timely (median or count)	n_not_timely	not timely (median or count)	test	p
-artifact_v3	stars	28	1020.5	63	2564	Mann-Whitney U	0.277
-artifact_v3	contributors	28	91.5	63	63	Mann-Whitney U	0.387
-artifact_v3	commits in 6 months before warning	28	127	63	60	Mann-Whitney U	0.013
-artifact_v3	workflow files	28	5	63	4	Mann-Whitney U	0.105
-artifact_v3	deprecated occurrences	28	2	63	2	Mann-Whitney U	0.825
-artifact_v3	age (years)	28	7.55	63	6.2	Mann-Whitney U	0.292
-artifact_v3	Dependabot for Actions	28	3 (11%)	63	2 (3%)	Fisher	0.167
-artifact_v3	Renovate	28	2 (7%)	63	1 (2%)	Fisher	0.223
-artifact_v3	Dependabot or Renovate	28	4 (14%)	63	3 (5%)	Fisher	0.196
+artifact_v3	stars	27	1120	63	2564	Mann-Whitney U	0.351
+artifact_v3	contributors	27	95	63	63	Mann-Whitney U	0.277
+artifact_v3	commits in 6 months before warning	27	100	63	60	Mann-Whitney U	0.021
+artifact_v3	workflow files	27	5	63	4	Mann-Whitney U	0.117
+artifact_v3	deprecated occurrences	27	2	63	2	Mann-Whitney U	0.807
+artifact_v3	age (years)	27	8.1	63	6.2	Mann-Whitney U	0.221
+artifact_v3	Dependabot for Actions	27	3 (11%)	63	2 (3%)	Fisher	0.157
+artifact_v3	Renovate	27	2 (7%)	63	1 (2%)	Fisher	0.213
+artifact_v3	Dependabot or Renovate	27	4 (15%)	63	3 (5%)	Fisher	0.191
 set_output	stars	25	3883	32	3516.5	Mann-Whitney U	0.601
 set_output	contributors	25	131	32	89	Mann-Whitney U	0.303
 set_output	commits in 6 months before warning	25	153	32	102	Mann-Whitney U	0.108

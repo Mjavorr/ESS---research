@@ -1,9 +1,9 @@
 event	covariate (log10 stars, log1p counts)	hazard ratio	95% CI	p
-artifact_v3	stars	0.66	0.43–1.02	0.060
-artifact_v3	commits_6m	1.15	1.02–1.29	0.019
-artifact_v3	occurrences	0.91	0.64–1.29	0.586
-artifact_v3	update_bot	1.82	0.81–4.07	0.148
-artifact_v3	n=91, migrations=86			
+artifact_v3	stars	0.68	0.44–1.05	0.082
+artifact_v3	commits_6m	1.14	1.02–1.28	0.026
+artifact_v3	occurrences	0.91	0.64–1.29	0.603
+artifact_v3	update_bot	1.87	0.83–4.20	0.130
+artifact_v3	n=90, migrations=85			
 set_output	stars	1.58	0.84–2.98	0.155
 set_output	commits_6m	1.04	0.84–1.29	0.716
 set_output	occurrences	1.28	0.78–2.09	0.330
