@@ -1,7 +1,7 @@
 repo	event	exposed_at_warning	still_present_now	category	days_from_warning	migration_commit	migration_date	migration_author	author_is_bot	migration_subject	last_repo_activity	group_migrations
 aio-libs/aiohttp	artifact_v3	7	0	during_warning	260	d54b3e2712	2025-01-01	Simon Lamon	no	Update workflow to use upload-artifact v4 and download-artifact v4	2026-10-13	2025-01-30:2025-01-01;
 aio-libs/aiohttp	set_output	1	0	during_warning	556	c26f356234	2024-04-19	Oleg A	no	Upgrade the deprecated GitHub Actions `set-output` workflow command syntax	2026-10-13	
-apache/arrow	artifact_v3	3	0	during_warning	142	8113594c85	2024-09-05	dependabot[bot]	yes	GH-43952: [CI] Bump actions/{upload|download}-artifact from 3 to latest v4 in /.github/workflows (#4	2026-10-13	2025-01-30:2024-09-05;
+apache/arrow	artifact_v3	5	0	during_warning	142	8113594c85	2024-09-05	dependabot[bot]	yes	GH-43952: [CI] Bump actions/{upload|download}-artifact from 3 to latest v4 in /.github/workflows (#4	2026-10-13	2025-01-30:2024-09-05;
 apache/arrow	set_output	4	0	during_warning	6	9b23bc4577	2022-10-17	Sutou Kouhei	no	ARROW-18033: [CI] Use $GITHUB_OUTPUT instead of set-output (#14409)	2026-10-13	
 bazelbuild/rules_pkg	artifact_v3	1	0	after_enforcement	646	e93d65a860	2026-01-22	Yun Peng	no	fix(ci): update deprecated GH Actions (scorecard) (#1011)	2026-10-09	2025-01-30:2026-01-22;
 bazelbuild/rules_pkg	set_output	0	0	not_exposed							2026-10-09	
@@ -17,7 +17,7 @@ dotnet/runtime	artifact_v3	1	0	during_warning	13	4ac82c948a	2024-04-29	dependabo
 dotnet/runtime	set_output	1	1	never (as of collection)							2026-10-13	
 eslint/eslint	artifact_v3	1	0	during_warning	21	c18ad252c2	2024-05-07	renovate[bot]	yes	chore: update actions/upload-artifact action to v4 (#18427)	2026-10-10	2025-01-30:2024-05-07;
 eslint/eslint	set_output	0	0	not_exposed							2026-10-10	
-expressjs/express	artifact_v3	2	0	after_enforcement	295	a5cb681eb8	2025-02-05	Phillip Barta	no	ci: updated github actions ci workflow (#6314)	2026-10-09	2025-01-30:2025-02-05;
+expressjs/express	artifact_v3	2	0	after_enforcement	295	ae6a4621bc	2025-02-05	Phillip Barta	no	fix(ci): updated scorecard actions (#6322)	2026-10-09	2025-01-30:2025-02-05;
 expressjs/express	set_output	1	0	during_warning	526	e9f9aaeebd	2024-03-20	Wes Todd	no	Merge tag '4.19.0' into 5.x	2026-10-09	
 facebook/react	artifact_v3	4	0	during_warning	101	0023cff871	2024-07-26	Lauren Tan	no	[ci] Update runtime_commit_artifacts step versions	2026-10-13	2025-01-30:2024-07-26;
 facebook/react	set_output	0	0	not_exposed							2026-10-13	
@@ -25,7 +25,7 @@ fluent/fluent-bit	artifact_v3	0	0	not_exposed							2026-10-13
 fluent/fluent-bit	set_output	10	0	during_warning	22	1eb3dae823	2022-11-02	Pat	no	workflows: update deprecated set output workflows (#6336)	2026-10-13	
 git/git	artifact_v3	1	0	after_enforcement	153	f9fff154d3	2024-09-16	Junio C Hamano	no	Merge branch 'jc/ci-upload-artifact-and-linux32'	2026-10-06	2024-06-30:2024-09-16;
 git/git	set_output	3	0	during_warning	60	82444ead4c	2022-12-10	Junio C Hamano	no	Merge branch 'ab/ci-retire-set-output'	2026-10-06	
-hashicorp/terraform	artifact_v3	0	0	not_exposed							2026-10-13	
+hashicorp/terraform	artifact_v3	6	0	during_warning	23	c8179dda1b	2024-05-09	hashicorp-tsccr[bot]	yes	Result of tsccr-helper -log-level=info gha update -latest .	2026-10-13	2025-01-30:2024-05-09;
 hashicorp/terraform	set_output	6	0	during_warning	168	880b87a0e7	2023-03-28	emily neil	no	Releng/migrate common release tooling (#32797)	2026-10-13	
 home-assistant/core	artifact_v3	0	0	not_exposed							2026-10-13	
 home-assistant/core	set_output	10	0	during_warning	2	be46702a53	2022-10-13	Marc Mueller	no	Replace deprecated set-output commands [ci] (#80259)	2026-10-13	
@@ -43,7 +43,11 @@ nushell/nushell	artifact_v3	0	0	not_exposed							2026-10-13
 nushell/nushell	set_output	3	0	during_warning	51	45c66e2090	2022-12-01	Justin Ma	no	Update release script to nu v0.71 and use ubuntu-20.04 to build nu binary (#7290)	2026-10-13	
 obsproject/obs-studio	artifact_v3	0	0	not_exposed							2026-10-08	
 obsproject/obs-studio	set_output	20	0	during_warning	7	7c66b125ae	2022-10-18	Ryan Foster	no	CI: Update GitHub Actions for set-output deprecation	2026-10-08	
-protocolbuffers/protobuf	artifact_v3	5	0	during_warning	184	8818c672f5	2024-10-17	dependabot[bot]	yes	Bump actions/upload-artifact and actions/download-artifact from 3 to 4 (#18329)	2026-10-13	2025-01-30:2024-10-17;
+pallets/flask	artifact_v3	3	0	during_warning	7	f48802acbb	2024-04-23	David Lord	no	Bump the github-actions group across 1 directory with 4 updates (#5470)	2026-10-07	2025-01-30:2024-04-23;
+pallets/flask	set_output	0	0	not_exposed							2026-10-07	
+pallets/jinja	artifact_v3	3	0	during_warning	7	9b33637538	2024-04-23	David Lord	no	Bump the github-actions group across 1 directory with 4 updates (#1970)	2025-06-14	2025-01-30:2024-04-23;
+pallets/jinja	set_output	0	0	not_exposed							2025-06-14	
+protocolbuffers/protobuf	artifact_v3	8	0	during_warning	184	8818c672f5	2024-10-17	dependabot[bot]	yes	Bump actions/upload-artifact and actions/download-artifact from 3 to 4 (#18329)	2026-10-13	2025-01-30:2024-10-17;
 protocolbuffers/protobuf	set_output	0	0	not_exposed							2026-10-13	
 psf/black	artifact_v3	5	0	after_enforcement	296	5f23701708	2025-02-06	GiGaGon	no	Fix diff shades CI (#4576)	2026-10-10	2025-01-30:2025-02-06;
 psf/black	set_output	0	0	not_exposed							2026-10-10	
@@ -61,7 +65,7 @@ serde-rs/serde	artifact_v3	0	0	not_exposed							2026-09-21
 serde-rs/serde	set_output	1	0	during_warning	2	55cf0ac51a	2022-10-13	David Tolnay	no	Merge pull request #2297 from serde-rs/output	2026-09-21	
 sharkdp/bat	artifact_v3	0	0	not_exposed							2026-10-07	
 sharkdp/bat	set_output	8	0	during_warning	154	c5602f9766	2023-03-14	David Peter	no	Merge pull request #2501 from nickelc/ci-actions	2026-10-07	
-symfony/symfony	artifact_v3	0	0	not_exposed							2026-10-13	
+symfony/symfony	artifact_v3	1	0	after_enforcement	381	e19fc0b463	2025-05-02	Fabien Potencier	no	minor #60313 update scorecards actions (xabbuh)	2026-10-13	2025-01-30:2025-05-02;
 symfony/symfony	set_output	1	0	during_warning	24	bc6e68905a	2022-11-04	Nicolas Grekas	no	Merge branch '6.1' into 6.2	2026-10-13	
 tiangolo/fastapi	artifact_v3	4	0	during_warning	23	722107fe60	2024-05-09	Tamir Duberstein	no	👷 Update GitHub actions to download and upload artifacts to v4, for docs and coverage (#11550)	2026-10-08	2025-01-30:2024-05-09;
 tiangolo/fastapi	set_output	0	0	not_exposed							2026-10-08	

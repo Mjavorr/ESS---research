@@ -85,7 +85,7 @@ bazel-contrib/bazel-gazelle	artifact_v3	0	0	not_exposed							2026-10-27
 bazel-contrib/bazel-gazelle	set_output	0	0	not_exposed							2026-10-27	
 belphemur/soundswitch	artifact_v3	0	0	not_exposed							2026-10-27	
 belphemur/soundswitch	set_output	1	0	during_warning	117	679c01c48e	2023-02-05	Antoine Aflalo	no	ci(output): Change the way to give an output to CI steps	2026-10-27	
-bitnami/sealed-secrets	artifact_v3	0	0	not_exposed							2026-10-26	
+bitnami/sealed-secrets	artifact_v3	5	0	during_warning	141	ec23dd3eac	2024-09-04	dependabot[bot]	yes	Bump actions/download-artifact from 3.0.1 to 4.1.7 in /.github/workflows (#1595)	2026-10-26	2025-01-30:2024-09-04;
 bitnami/sealed-secrets	set_output	2	0	during_warning	13	0634f9c843	2022-10-24	josvaz	no	Fix set-output usages as per GH guidance (#1039)	2026-10-26	
 blade-build/blade-build	artifact_v3	0	0	not_exposed							2026-08-13	
 blade-build/blade-build	set_output	0	0	not_exposed							2026-08-13	
@@ -129,7 +129,7 @@ cisco/mercury	artifact_v3	0	0	not_exposed							2026-09-23
 cisco/mercury	set_output	0	0	not_exposed							2026-09-23	
 citizenfx/fivem	artifact_v3	0	0	not_exposed							2026-10-26	
 citizenfx/fivem	set_output	0	0	not_exposed							2026-10-26	
-cleverraven/cataclysm-dda	artifact_v3	0	0	not_exposed							2026-10-28	
+cleverraven/cataclysm-dda	artifact_v3	1	0	during_warning	141	9eb34aed04	2024-09-04	Maleclypse	no	Merge pull request #76181 from CleverRaven/kevingranade-bump-download-artifact-version	2026-10-28	2025-01-30:2024-09-04;
 cleverraven/cataclysm-dda	set_output	20	0	during_warning	103	4104d317d4	2023-01-22	Binrui Dong	no	Migrate from set-output to GITHUB_OUTPUT (#63169)	2026-10-28	
 cloudwego/kitex	artifact_v3	0	0	not_exposed							2026-10-10	
 cloudwego/kitex	set_output	0	0	not_exposed							2026-10-10	
@@ -241,7 +241,7 @@ extractus/article-extractor	artifact_v3	0	0	not_exposed							2026-08-20
 extractus/article-extractor	set_output	0	0	not_exposed							2026-08-20	
 facebook/mvfst	artifact_v3	3	0	after_enforcement	151	427d8ec34a	2024-09-14	Alex Hornby	no	regenerate github actions to update actions/upload-artifact version	2026-10-28	2024-06-30:2024-09-14;
 facebook/mvfst	set_output	0	0	not_exposed							2026-10-28	
-fairy-stockfish/fairy-stockfish	artifact_v3	3	0	during_warning	258	c2b61bb161	2024-12-30	yjf2002ghty	no	Update workflow action version (#851)	2026-09-23	2025-01-30:2024-12-30;
+fairy-stockfish/fairy-stockfish	artifact_v3	4	0	during_warning	258	c2b61bb161	2024-12-30	yjf2002ghty	no	Update workflow action version (#851)	2026-09-23	2025-01-30:2024-12-30;
 fairy-stockfish/fairy-stockfish	set_output	0	0	not_exposed							2026-09-23	
 fastavro/fastavro	artifact_v3	0	0	not_exposed							2026-10-27	
 fastavro/fastavro	set_output	0	0	not_exposed							2026-10-27	
@@ -281,7 +281,7 @@ gerbilsoft/rom-properties	artifact_v3	0	0	not_exposed							2026-10-27
 gerbilsoft/rom-properties	set_output	0	0	not_exposed							2026-10-27	
 getanteon/anteon	artifact_v3	0	0	not_exposed							2026-03-04	
 getanteon/anteon	set_output	0	0	not_exposed							2026-03-04	
-getsentry/sentry	artifact_v3	2	0	during_warning	97	6d95cf5654	2024-07-22	Matthew T	no	chore bump actions/checkout & actions/depedency-review-action (#74464)	2026-10-28	2025-01-30:2024-07-22;
+getsentry/sentry	artifact_v3	2	0	after_enforcement	612	1c1656e8a5	2025-12-19	Ryan Brooks	no	chore(infra): Remove unused codecov ATS workflow (#105305)	2026-10-28	2025-01-30:2025-12-19;
 getsentry/sentry	set_output	4	0	during_warning	1	efae4c9d9b	2022-10-12	anthony sottile	no	ref: fix deprecated set-output calls (#39922)	2026-10-28	
 getsentry/sentry-native	artifact_v3	1	0	during_warning	36	65446506fd	2024-05-22	Markus Hintersteiner	no	Move NDK from sentry-java to sentry-native (#944)	2026-10-28	2025-01-30:2024-05-22;
 getsentry/sentry-native	set_output	0	0	not_exposed							2026-10-28	
@@ -321,7 +321,7 @@ graphql-editor/graphql-editor	artifact_v3	0	0	not_exposed							2025-09-10
 graphql-editor/graphql-editor	set_output	0	0	not_exposed							2025-09-10	
 grocy/grocy	artifact_v3	0	0	not_exposed							2026-09-16	
 grocy/grocy	set_output	0	0	not_exposed							2026-09-16	
-gsantner/markor	artifact_v3	0	0	not_exposed							2026-10-27	
+gsantner/markor	artifact_v3	2	0	after_enforcement	153	ea066b6ac9	2024-09-16	Gregor Santner	no	GitHub Actions CI configuration - upgrade upload step, fixes CI build error (PR #2416 by @gsantner)	2026-10-27	2024-06-30:2024-09-16;
 gsantner/markor	set_output	0	0	not_exposed							2026-10-27	
 guysoft/octopi	artifact_v3	1	0	after_enforcement	203	0cf9e406c3	2024-11-05	Guy Sheffer	no	Update github action upload version	2026-08-04	2024-06-30:2024-11-05;
 guysoft/octopi	set_output	1	0	during_warning	1391	b24c43af50	2026-08-02	Guy Sheffer	no	Merge pull request #879 from guysoft/feature/e2e	2026-08-04	
@@ -367,7 +367,7 @@ implem/implem.pleasanter	artifact_v3	0	0	not_exposed							2026-10-27
 implem/implem.pleasanter	set_output	0	0	not_exposed							2026-10-27	
 inkle/inky	artifact_v3	0	0	not_exposed							2026-05-05	
 inkle/inky	set_output	0	0	not_exposed							2026-05-05	
-izhangzhihao/intellij-rainbow-brackets	artifact_v3	0	0	not_exposed							2026-06-01	
+izhangzhihao/intellij-rainbow-brackets	artifact_v3	1	0	after_enforcement	135	1953e6c184	2024-08-29	张志豪	no	update github actions	2026-06-01	2024-06-30:2024-08-29;
 izhangzhihao/intellij-rainbow-brackets	set_output	3	0	during_warning	688	1953e6c184	2024-08-29	张志豪	no	update github actions	2026-06-01	
 j-easy/easy-random	artifact_v3	0	0	not_exposed							2026-08-26	
 j-easy/easy-random	set_output	0	0	not_exposed							2026-08-26	
@@ -519,7 +519,7 @@ maxmind/libmaxminddb	artifact_v3	0	0	not_exposed							2026-10-26
 maxmind/libmaxminddb	set_output	0	0	not_exposed							2026-10-26	
 MCDReforged/MCDReforged	artifact_v3	0	0	not_exposed							2026-10-22	
 MCDReforged/MCDReforged	set_output	0	0	not_exposed							2026-10-22	
-mcneel/rhino3dm	artifact_v3	0	0	not_exposed							2026-10-20	
+mcneel/rhino3dm	artifact_v3	8	0	during_warning	94	2be29689d9	2024-07-19	Luis E. Fraguada	no	Merge pull request #632 from mcneel/dev	2026-10-20	2025-01-30:2024-07-19;
 mcneel/rhino3dm	set_output	3	0	during_warning	99	830ba551ab	2023-01-18	fraguada	no	remove use of depricated set-output	2026-10-20	
 meriyah/meriyah	artifact_v3	0	0	not_exposed							2026-10-28	
 meriyah/meriyah	set_output	0	0	not_exposed							2026-10-28	
@@ -633,7 +633,7 @@ orx/orx	artifact_v3	0	0	not_exposed							2026-10-25
 orx/orx	set_output	0	0	not_exposed							2026-10-25	
 otranscribe/otranscribe	artifact_v3	0	0	not_exposed							2026-04-27	
 otranscribe/otranscribe	set_output	0	0	not_exposed							2026-04-27	
-OWASP/pytm	artifact_v3	0	0	not_exposed							2026-10-05	
+OWASP/pytm	artifact_v3	1	0	after_enforcement	308	0c8f23c4fe	2025-02-18	Izar Tarandach	no	Update scorecard.yml	2026-10-05	2025-01-30:2025-02-18;
 OWASP/pytm	set_output	0	0	not_exposed							2026-10-05	
 owlcs/owlapi	artifact_v3	0	0	not_exposed							2026-10-20	
 owlcs/owlapi	set_output	0	0	not_exposed							2026-10-20	
@@ -937,7 +937,7 @@ versatica/mediasoup-demo	artifact_v3	0	0	not_exposed							2026-10-27
 versatica/mediasoup-demo	set_output	0	0	not_exposed							2026-10-27	
 vicajilau/flutter_file_picker	artifact_v3	0	0	not_exposed							2026-10-26	
 vicajilau/flutter_file_picker	set_output	0	0	not_exposed							2026-10-26	
-visgl/deck.gl	artifact_v3	0	0	not_exposed							2026-10-26	
+visgl/deck.gl	artifact_v3	1	0	after_enforcement	293	2765083724	2025-02-03	Don McCurdy	no	chore(ci): Add dependabot.yml, update actions/upload-artifact (#9391)	2026-10-26	2025-01-30:2025-02-03;
 visgl/deck.gl	set_output	1	0	during_warning	563	5c1d0b0e8c	2024-04-26	Xiaoji Chen	no	chore: update CI workflows (#8837)	2026-10-26	
 viti95/fastdoom	artifact_v3	0	0	not_exposed							2026-10-27	
 viti95/fastdoom	set_output	0	0	not_exposed							2026-10-27	

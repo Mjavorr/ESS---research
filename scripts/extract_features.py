@@ -32,10 +32,11 @@ import sys
 from concurrent.futures import ProcessPoolExecutor
 from datetime import date, timedelta
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from patterns import DEPRECATED_PY, LOOSE  # noqa: E402
+
 WF = ".github/workflows"
 T_WARN = {"artifact_v3": date(2024, 4, 16), "set_output": date(2022, 10, 11)}
-LOOSE = {"artifact_v3": r"actions/(upload|download)-artifact@v[123]",
-         "set_output": r"::(set-output|save-state)"}
 BOT_RE = re.compile(r"\[bot\]|dependabot|renovate|github-actions|pre-commit-ci|mergify", re.I)
 BOT_CREDIT_RE = re.compile(r"(co-authored-by|signed-off-by):.*(dependabot|renovate|\[bot\])", re.I)
 RENOVATE_FILES = ["renovate.json", "renovate.json5", ".renovaterc", ".renovaterc.json",
@@ -109,10 +110,16 @@ def rq4(repo, event, mig_sha, owner):
     parents = git(repo, "rev-list", "--parents", "-n1", full).split()[1:]
     change = full
     if len(parents) > 1:
+        # The latest commit brought in by the merge whose diff removed a deprecated line.
+        # (-G with the loose pattern only narrows the candidates; the strict pattern decides.)
         inner = git(repo, "log", "--no-merges", "--format=%H", "-G", LOOSE[event],
                     f"{parents[0]}..{full}", "--", WF).splitlines()
-        if inner:
-            change = inner[0]  # latest commit in the merge that touched the deprecated lines
+        for c in inner:
+            diff = git(repo, "diff", "--unified=0", f"{c}^", c, "--", WF)
+            if any(l.startswith("-") and not l.startswith("---") and DEPRECATED_PY[event].search(l[1:])
+                   for l in diff.splitlines()):
+                change = c
+                break
     name, email, day, body = git(repo, "log", "-1", "--format=%aN%x1f%aE%x1f%as%x1f%B", change).split("\x1f", 3)
     merged_by = git(repo, "log", "-1", "--format=%aN", full) if change != full else ""
     kind = classify_author(repo, name, email, date.fromisoformat(day))

@@ -5,7 +5,7 @@ alacritty/alacritty	artifact_v3	0	0	not_exposed							2026-10-05
 alacritty/alacritty	set_output	0	0	not_exposed							2026-10-05	
 ansible/ansible	artifact_v3	0	0	not_exposed							2026-10-13	
 ansible/ansible	set_output	0	0	not_exposed							2026-10-13	
-apache/arrow	artifact_v3	3	0	during_warning	142	8113594c85	2024-09-05	dependabot[bot]	yes	GH-43952: [CI] Bump actions/{upload|download}-artifact from 3 to latest v4 in /.github/workflows (#4	2026-10-13	2025-01-30:2024-09-05;
+apache/arrow	artifact_v3	5	0	during_warning	142	8113594c85	2024-09-05	dependabot[bot]	yes	GH-43952: [CI] Bump actions/{upload|download}-artifact from 3 to latest v4 in /.github/workflows (#4	2026-10-13	2025-01-30:2024-09-05;
 apache/arrow	set_output	4	0	during_warning	6	9b23bc4577	2022-10-17	Sutou Kouhei	no	ARROW-18033: [CI] Use $GITHUB_OUTPUT instead of set-output (#14409)	2026-10-13	
 astral-sh/ruff	artifact_v3	0	0	not_exposed							2026-10-13	
 astral-sh/ruff	set_output	0	0	not_exposed							2026-10-13	
@@ -31,7 +31,7 @@ encode/httpx	artifact_v3	0	0	not_exposed							2026-02-23
 encode/httpx	set_output	0	0	not_exposed							2026-02-23	
 eslint/eslint	artifact_v3	1	0	during_warning	21	c18ad252c2	2024-05-07	renovate[bot]	yes	chore: update actions/upload-artifact action to v4 (#18427)	2026-10-10	2025-01-30:2024-05-07;
 eslint/eslint	set_output	0	0	not_exposed							2026-10-10	
-expressjs/express	artifact_v3	2	0	after_enforcement	295	a5cb681eb8	2025-02-05	Phillip Barta	no	ci: updated github actions ci workflow (#6314)	2026-10-09	2025-01-30:2025-02-05;
+expressjs/express	artifact_v3	2	0	after_enforcement	295	ae6a4621bc	2025-02-05	Phillip Barta	no	fix(ci): updated scorecard actions (#6322)	2026-10-09	2025-01-30:2025-02-05;
 expressjs/express	set_output	1	0	during_warning	526	e9f9aaeebd	2024-03-20	Wes Todd	no	Merge tag '4.19.0' into 5.x	2026-10-09	
 facebook/react	artifact_v3	4	0	during_warning	101	0023cff871	2024-07-26	Lauren Tan	no	[ci] Update runtime_commit_artifacts step versions	2026-10-13	2025-01-30:2024-07-26;
 facebook/react	set_output	0	0	not_exposed							2026-10-13	
@@ -55,7 +55,7 @@ google/guava	artifact_v3	0	0	not_exposed							2026-10-09
 google/guava	set_output	0	0	not_exposed							2026-10-09	
 grpc/grpc	artifact_v3	0	0	not_exposed							2026-10-13	
 grpc/grpc	set_output	0	0	not_exposed							2026-10-13	
-hashicorp/terraform	artifact_v3	0	0	not_exposed							2026-10-13	
+hashicorp/terraform	artifact_v3	6	0	during_warning	23	c8179dda1b	2024-05-09	hashicorp-tsccr[bot]	yes	Result of tsccr-helper -log-level=info gha update -latest .	2026-10-13	2025-01-30:2024-05-09;
 hashicorp/terraform	set_output	6	0	during_warning	168	880b87a0e7	2023-03-28	emily neil	no	Releng/migrate common release tooling (#32797)	2026-10-13	
 home-assistant/core	artifact_v3	0	0	not_exposed							2026-10-13	
 home-assistant/core	set_output	10	0	during_warning	2	be46702a53	2022-10-13	Marc Mueller	no	Replace deprecated set-output commands [ci] (#80259)	2026-10-13	
@@ -101,9 +101,9 @@ opencv/opencv	artifact_v3	0	0	not_exposed							2026-10-13
 opencv/opencv	set_output	0	0	not_exposed							2026-10-13	
 pallets/click	artifact_v3	0	0	not_exposed							2026-10-04	
 pallets/click	set_output	0	0	not_exposed							2026-10-04	
-pallets/flask	artifact_v3	0	0	not_exposed							2026-10-07	
+pallets/flask	artifact_v3	3	0	during_warning	7	f48802acbb	2024-04-23	David Lord	no	Bump the github-actions group across 1 directory with 4 updates (#5470)	2026-10-07	2025-01-30:2024-04-23;
 pallets/flask	set_output	0	0	not_exposed							2026-10-07	
-pallets/jinja	artifact_v3	0	0	not_exposed							2025-06-14	
+pallets/jinja	artifact_v3	3	0	during_warning	7	9b33637538	2024-04-23	David Lord	no	Bump the github-actions group across 1 directory with 4 updates (#1970)	2025-06-14	2025-01-30:2024-04-23;
 pallets/jinja	set_output	0	0	not_exposed							2025-06-14	
 PowerShell/PowerShell	artifact_v3	0	0	not_exposed							2026-10-09	
 PowerShell/PowerShell	set_output	0	0	not_exposed							2026-10-09	
@@ -111,7 +111,7 @@ prettier/prettier	artifact_v3	0	0	not_exposed							2026-10-13
 prettier/prettier	set_output	0	0	not_exposed							2026-10-13	
 prometheus/prometheus	artifact_v3	0	0	not_exposed							2026-10-13	
 prometheus/prometheus	set_output	0	0	not_exposed							2026-10-13	
-protocolbuffers/protobuf	artifact_v3	5	0	during_warning	184	8818c672f5	2024-10-17	dependabot[bot]	yes	Bump actions/upload-artifact and actions/download-artifact from 3 to 4 (#18329)	2026-10-13	2025-01-30:2024-10-17;
+protocolbuffers/protobuf	artifact_v3	8	0	during_warning	184	8818c672f5	2024-10-17	dependabot[bot]	yes	Bump actions/upload-artifact and actions/download-artifact from 3 to 4 (#18329)	2026-10-13	2025-01-30:2024-10-17;
 protocolbuffers/protobuf	set_output	0	0	not_exposed							2026-10-13	
 psf/black	artifact_v3	5	0	after_enforcement	296	5f23701708	2025-02-06	GiGaGon	no	Fix diff shades CI (#4576)	2026-10-10	2025-01-30:2025-02-06;
 psf/black	set_output	0	0	not_exposed							2026-10-10	
@@ -155,7 +155,7 @@ square/okhttp	artifact_v3	0	0	not_exposed							2026-10-12
 square/okhttp	set_output	0	0	not_exposed							2026-10-12	
 streamlink/streamlink	artifact_v3	0	0	not_exposed							2026-10-11	
 streamlink/streamlink	set_output	0	0	not_exposed							2026-10-11	
-symfony/symfony	artifact_v3	0	0	not_exposed							2026-10-13	
+symfony/symfony	artifact_v3	1	0	after_enforcement	381	e19fc0b463	2025-05-02	Fabien Potencier	no	minor #60313 update scorecards actions (xabbuh)	2026-10-13	2025-01-30:2025-05-02;
 symfony/symfony	set_output	1	0	during_warning	24	bc6e68905a	2022-11-04	Nicolas Grekas	no	Merge branch '6.1' into 6.2	2026-10-13	
 syncthing/syncthing	artifact_v3	0	0	not_exposed							2026-10-12	
 syncthing/syncthing	set_output	0	0	not_exposed							2026-10-12	

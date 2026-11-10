@@ -12,16 +12,15 @@ For rows with no migration, prints the remaining occurrences at HEAD.
 Usage: python3 scripts/collect_evidence.py <clones_dir> <exposed.tsv> > evidence.txt
 """
 import csv
+import os
 import re
 import subprocess
 import sys
 
-PAT = {
-    "artifact_v3": re.compile(r"^[^#]*uses:\s*['\"]?actions/(upload|download)-artifact@v[123]([^0-9.]|$)"),
-    "set_output": re.compile(r"^[^#]*::(set-output|save-state)"),
-}
-LOOSE = {"artifact_v3": r"actions/(upload|download)-artifact@v[123]",
-         "set_output": r"::(set-output|save-state)"}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from patterns import DEPRECATED_PY, LOOSE  # noqa: E402
+
+PAT = DEPRECATED_PY
 ADDED_HINT = {"artifact_v3": re.compile(r"(upload|download)-artifact|actions/cache|uses:"),
               "set_output": re.compile(r"GITHUB_OUTPUT|GITHUB_STATE|setOutput|set-output")}
 WF = ".github/workflows"

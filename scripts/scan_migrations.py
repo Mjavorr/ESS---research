@@ -16,24 +16,25 @@ import sys
 from concurrent.futures import ProcessPoolExecutor
 from datetime import date
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from patterns import ARTIFACT_ALL, ARTIFACT_V12, ARTIFACT_V3, SET_OUTPUT  # noqa: E402
+
 EVENTS = {
-    # Official artifact actions only, ignore commented-out lines.
+    # Official artifact actions v1-v3 by tag, minor/patch tag or commit pin (see patterns.py).
     "artifact_v3": {
-        "regex": r"^[^#]*uses:[[:space:]]*['\"]?actions/(upload|download)-artifact@v[123]([^0-9.]|$)",
-        "loose": r"actions/(upload|download)-artifact@v[123]",
+        "regex": ARTIFACT_ALL["ere"],
         "t_warn": "2024-04-16",    # GitHub changelog: deprecation notice
         "t_enforce": "2025-01-30",  # changelog 2024-04-16: v3 stops working 30 Jan 2025
         # Version groups with their own cutoff (same changelog: v1/v2 on 30 Jun 2024).
         # A repository counts as migrating "after enforcement" if any group it used at
         # T_warn disappeared only after that group's cutoff.
         "groups": [
-            (r"^[^#]*uses:[[:space:]]*['\"]?actions/(upload|download)-artifact@v[12]([^0-9.]|$)", "2024-06-30"),
-            (r"^[^#]*uses:[[:space:]]*['\"]?actions/(upload|download)-artifact@v3([^0-9.]|$)", "2025-01-30"),
+            (ARTIFACT_V12["ere"], "2024-06-30"),
+            (ARTIFACT_V3["ere"], "2025-01-30"),
         ],
     },
     "set_output": {
-        "regex": r"^[^#]*::(set-output|save-state)",
-        "loose": r"::(set-output|save-state)",
+        "regex": SET_OUTPUT["ere"],
         "t_warn": "2022-10-11",    # GitHub changelog: deprecation notice
         "t_enforce": None,          # announced for 2023-05-31, postponed on 2023-07-24, never enforced
     },
@@ -42,9 +43,13 @@ WF = ".github/workflows"
 BOTS = ("[bot]", "dependabot", "renovate", "github-actions")
 
 
-def git(repo, *args):
-    r = subprocess.run(["git", "-C", repo, *args], capture_output=True, text=True)
-    return r.stdout.strip()
+def git(repo, *args, retries=3):
+    """Run git; retry transient failures (e.g. lazy fetches), then fail loudly."""
+    for _ in range(retries):
+        r = subprocess.run(["git", "-C", repo, *args], capture_output=True, text=True)
+        if r.returncode == 0:
+            return r.stdout.strip()
+    raise RuntimeError(f"git {' '.join(args)} failed in {repo}: {r.stderr.strip()[:300]}")
 
 
 def count(repo, sha, regex, retries=3):

@@ -1,8 +1,8 @@
 event	phase	repositories	percent
-artifact_v3	before any breakage	10	62.5
+artifact_v3	before any breakage	13	65.0
 artifact_v3	during brownouts	0	0.0
-artifact_v3	after cutoff (broken)	5	31.2
-artifact_v3	not migrated	1	6.2
+artifact_v3	after cutoff (broken)	6	30.0
+artifact_v3	not migrated	1	5.0
 set_output	before announced cutoff	21	77.8
 set_output	between cutoff date and postponement	1	3.7
 set_output	after postponement	3	11.1

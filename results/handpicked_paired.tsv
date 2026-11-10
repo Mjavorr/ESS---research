@@ -5,4 +5,6 @@ discourse/discourse	209	before any breakage	31	before announced cutoff
 dotnet/runtime	13	before any breakage	>1463	not migrated
 expressjs/express	295	after cutoff (broken)	526	after postponement
 git/git	153	after cutoff (broken)	60	before announced cutoff
+hashicorp/terraform	23	before any breakage	168	before announced cutoff
 httpie/cli	>245	not migrated	>798	not migrated
+symfony/symfony	381	after cutoff (broken)	24	before announced cutoff

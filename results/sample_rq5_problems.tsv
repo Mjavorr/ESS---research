@@ -1,0 +1,7 @@
+problem	artifact_v3 (n=91)	set_output (n=57)
+incompatibility	12 (13%)	0 (0%)
+environment	3 (3%)	0 (0%)
+regression	0 (0%)	3 (5%)
+multiline	0 (0%)	3 (5%)
+deferral	3 (3%)	0 (0%)
+any problem	16 (18%)	6 (11%)

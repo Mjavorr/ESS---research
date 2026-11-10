@@ -1,0 +1,23 @@
+repo	event	change	trigger	problems	note
+StanfordVL/BEHAVIOR-1K	artifact_v3	adapt	breakage	incompatibility	"branch ""fix-ci"" during the brownouts; merge-multiple on download"
+academysoftwarefoundation/openfx	artifact_v3	adapt	incidental	environment	CentOS 7 build containers dropped: node20 actions need a newer glibc
+aio-libs/aiokafka	artifact_v3	adapt	breakage	incompatibility	fix publishing: per-matrix artifact names, download with pattern + merge-multiple
+ardupilot/ardupilot	set_output	bump	deprecation	regression	"wrote ""{timestamp}="" instead of ""timestamp=""; fixed 17 days later"
+cleverraven/cataclysm-dda	set_output	bump	deprecation	multiline	multi-line PR body written without a delimiter; generation simplified a month later (probable)
+draios/sysdig-inspect	artifact_v3	adapt	breakage	environment	"build image glibc too old for node20: build moved to ""docker run"", actions on the host"
+dyninst/dyninst	artifact_v3	bump	routine	incompatibility	update upload-artifact to 4.4 to be compatible with download
+fairy-stockfish/fairy-stockfish	artifact_v3	adapt	routine	incompatibility	artifact names made unique per matrix entry
+flxzt/rnote	artifact_v3	adapt	deprecation	incompatibility	include-hidden-files: true (v4 excludes hidden files by default)
+getsentry/sentry	artifact_v3	remove	incidental	deferral	v3 kept as commit pins when other actions were bumped (2024-07); stale workflow deleted in 2025-12
+johnnymorganz/stylua	set_output	none		multiline	multi-line body encoded with %0A for set-output; the new syntax needs a heredoc delimiter
+kubernetes-client/csharp	artifact_v3	adapt	targeted	incompatibility	artifact name made unique per OS
+lightspark/lightspark	set_output	bump	deprecation	regression	"unclosed ""${GITHUB_REF/..."": release step broken; fixed after several attempts 81 days later"
+lucide-icons/lucide	set_output	bump	deprecation	multiline	"multi-line changelog written without a delimiter; ""Try fix changelog output"" 15 days later"
+mcneel/rhino3dm	artifact_v3	bump	deprecation	environment;deferral	#needs to stay this version until we upgrade this os; moved to a node20 version later
+mcneel/rhino3dm	set_output	bump	deprecation	regression	"wrote ""{file}={...}"" and the wrong file pattern; fixed the same day"
+mhammond/pywin32	artifact_v3	adapt	targeted	incompatibility	per-job artifact names + upload-artifact/merge job
+openedx/edx-platform	artifact_v3	adapt	routine	incompatibility	overwrite: true; follow-up PR for an artifact issue three weeks later
+panda-re/panda	artifact_v3	bump	routine	incompatibility;deferral	"rolled back after a week, then ""Fix upload for v4 due to unable to upload same file name twice"""
+qiskit/qiskit-aer	artifact_v3	adapt	targeted	incompatibility	Adds unique name for upload-artifact jobs; merge-multiple on download
+tencent/puerts	artifact_v3	adapt	targeted	incompatibility	artifact names per platform; download with pattern + merge-multiple
+wojciechmula/pyahocorasick	artifact_v3	adapt	incidental	incompatibility	per-job artifact names with cibuildwheel
