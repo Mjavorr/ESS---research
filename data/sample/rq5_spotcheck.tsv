@@ -1,0 +1,21 @@
+repo	event	check_change_type	check_trigger	check_problems	coded_change_type	coded_trigger	coded_problems
+dyninst/dyninst	artifact_v3	bump	routine	none	bump	routine	incompatibility
+getsentry/sentry	artifact_v3	remove	incidental	none	remove	incidental	deferral
+getsentry/sentry-native	artifact_v3	bump	incidental	none	bump	incidental	none
+izhangzhihao/intellij-rainbow-brackets	artifact_v3	remove	routine	none	remove	routine	none
+izhangzhihao/intellij-rainbow-brackets	set_output	remove	routine	none	remove	routine	none
+lucide-icons/lucide	set_output	bump	deprecation	multiline	bump	deprecation	multiline
+mcneel/rhino3dm	set_output	bump	deprecation	regression	bump	deprecation	regression
+mhammond/pywin32	artifact_v3	adapt	targeted	incompatibility	adapt	targeted	incompatibility
+mwouts/jupytext	artifact_v3	bump	incidental	none	bump	incidental	none
+oetiker/rrdtool-1.x	set_output	replace	incidental	none	replace	incidental	none
+pencil2d/pencil	artifact_v3	bump	deprecation	none	bump	deprecation	none
+pfrest/pfSense-pkg-RESTAPI	artifact_v3	bump	bot	none	bump	bot	none
+roslynpad/roslynpad	artifact_v3	bump	breakage	none	bump	breakage	none
+stellar/go	set_output	remove	incidental	none	remove	incidental	none
+tendermint/tendermint	set_output	none		none	none		none
+unitystation/unitystation	artifact_v3	none		none	none		none
+ventoy/ventoy	artifact_v3	bump	routine	none	bump	routine	none
+visgl/deck.gl	artifact_v3	bump	targeted	none	bump	routine	none
+wp-graphql/wp-graphql-woocommerce	artifact_v3	bump	routine	none	bump	routine	none
+wp-graphql/wp-graphql-woocommerce	set_output	none		none	none		none
