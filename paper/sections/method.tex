@@ -1,0 +1,115 @@
+\section{Dataset Curation}\label{sec:data}
+
+\subsection{Sampling}
+We drew the repositories from SEART GitHub Search~\cite{dabic2021seart}, exported on 28~October~2026 with the filters in Table~\ref{tab:frame}.
+Repositories created before 2022 existed through both events, and a commit after the last cutoff (February~2025) shows that a project was still maintained when a migration became unavoidable.
+The thresholds on stars, contributors and commits restrict the frame to established, collaborative projects, the population for which questions about who migrates and how quickly are meaningful.
+The export holds 22,608 repositories; we dropped the 393 archived ones, which can no longer change.
+We shuffled the remaining 22,215 with a fixed seed and took the first 500, a simple random sample that later batches can extend.
+One sampled repository no longer existed, and two sampled names turned out to be the same repository under its old and new name, which we counted once.
+The sample therefore has 498 distinct repositories.
+
+\begin{table}[t]
+\caption{Sampling frame (SEART GitHub Search, 2026-10-28)}\label{tab:frame}
+\centering\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Filter} & \textbf{Value} \\
+\midrule
+Created & before 2022-01-01 \\
+Last commit & on or after 2025-02-01 \\
+Stars / contributors / commits & $\geq$ 500 / $\geq$ 10 / $\geq$ 500 \\
+Forks, archived & excluded \\
+\midrule
+Frame / sample & 22,215 / 498 repositories \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Data collection}
+We cloned every repository with its full commit history (without file contents, which git fetches on demand) on 28~October~2026, and analyzed the history of its default branch up to that day.
+For each event and repository we scanned the files in \texttt{.github/workflows} at every relevant point of the first-parent history of the default branch, so that a change counts from the moment it reached the default branch, whether through a direct commit or a merge.
+
+\textbf{Detection.}
+For the artifact actions, a deprecated use is a \texttt{uses:} reference to \texttt{actions/upload-artifact} or \texttt{actions/download-artifact} at major version~1, 2 or~3, written as a major tag (\texttt{@v3}), a minor or patch tag (\texttt{@v3.1.3}), or a commit hash of one of those releases (we collected the hashes of all official v1--v3 tags).
+Actions of other owners with similar names, such as \texttt{dawidd6/action-download-artifact}, do not count.
+For the workflow commands, a deprecated use is the string \texttt{::set-output} or \texttt{::save-state}.
+Commented-out lines are ignored for both.
+
+\textbf{Exposure and migration.}
+A repository is \emph{exposed} to an event if its default branch contained at least one deprecated use on the day of the deprecation notice ($T_{warn}$).
+For an exposed repository, the \emph{migration} is the earliest default-branch commit after $T_{warn}$ after which no deprecated use remains; a repository with uses left on the collection day did not migrate.
+For the artifact actions we treat v1/v2 and v3 separately, because their cutoffs differ: a migration counts as after the cutoff if any version group that the repository used at $T_{warn}$ disappeared only after that group's cutoff.
+
+Of the 498 repositories, 124 were exposed to at least one event: 90 to the artifact deprecation, 57 to the \so{} deprecation and 23 to both, giving 147 (repository, event) pairs.
+
+\subsection{Validation}
+We developed the detection rules on a separate, hand-picked set of 90 popular repositories, checking every detected case against its diff and commit message.
+This revealed the problems the final rules address: commented-out lines, look-alike third-party actions, migrations that reach the default branch only through a merge, and repositories that mixed v2 and v3.
+\todo{Independent validation on the sample (manual\_validation.xlsx): A -- of 30 randomly sampled migrations, X removed the deprecated use as detected (precision); C -- of the 14 non-migrated pairs, Y still contained an active deprecated use in the collected snapshot; B -- agreement of the author classification with GitHub's author-association badge on 30 migrations.}
+
+\section{Data Analysis}\label{sec:analysis}
+
+\textbf{Time and censoring.}
+For every pair we measure time in days from the event's deprecation notice.
+Pairs that never migrated are right-censored at the repository's last commit or at data collection, whichever is earlier: a project that stopped committing had no further chance to migrate.
+
+\textbf{RQ1.}
+We assign each migration to a phase of its event's timeline.
+For the artifact actions the phases are \emph{before any breakage} (before the first brownout for v3, before the cutoff for v1/v2), \emph{during the brownouts} (9--29~January~2025), and \emph{after the cutoff}.
+For \so{} they are \emph{before the announced cutoff} (31~May~2023), \emph{between the announced cutoff and its postponement} (24~July~2023), and \emph{after the postponement}.
+We also plot migrations per calendar week against the key dates.
+
+\textbf{RQ2.}
+We estimate the share of exposed repositories still using the deprecated component over time with the Kaplan--Meier estimator~\cite{kaplan1958} and compare the two events with the log-rank test~\cite{mantel1966}.
+Because the events differ in period and in the projects they reach, we also compare, within the repositories that migrated away from both, the time each migration took (Wilcoxon signed-rank test).
+As a sensitivity check we repeat the comparison with all non-migrants censored at the collection date.
+
+\textbf{RQ3.}
+We call a migration \emph{timely} if it happened before anything broke (before any breakage for the artifact actions, before the announced cutoff for \so{}).
+For each pair we measured, on the default branch at $T_{warn}$: whether Dependabot was configured to update GitHub Actions and whether a Renovate configuration existed; the commits and distinct authors in the preceding six months; the number of workflow files; and the number of deprecated uses.
+Stars, contributors and age come from the SEART export.
+We compare timely and other pairs with the Mann--Whitney U test and Fisher's exact test, and fit, per event, a Cox proportional-hazards model~\cite{cox1972} of the time to migration with four covariates (stars, prior commits and deprecated uses on a log scale, and whether Dependabot or Renovate was configured), about one covariate per ten migrations.
+We correct each family of p-values with Holm's method~\cite{holm1979} and check the proportional-hazards assumption by correlating each covariate's Schoenfeld residuals with event time~\cite{grambsch1994}.
+
+\textbf{RQ4.}
+For each migration we identify the commit that removed the last deprecated use; when the migration reached the default branch through a merge, this is the commit inside the merge, not the merge itself.
+Its author is a \emph{bot} if the name identifies a dependency or automation bot (Dependabot, Renovate, GitHub Actions).
+A human author is a \emph{core maintainer} if, in the year before the migration, they authored at least 10 commits or at least 10\% of the default-branch commits (and at least 3), or authored a merge commit, or if the change was merged from a branch of the repository itself, which requires write access.
+Other authors are \emph{external contributors}.
+We also record whether a bot initiated a change that a human finished.
+
+\textbf{RQ5.}
+For every pair we collected the commit messages of the change and of the merge that brought it in, the workflow diff, follow-up commits to the same workflows within 30 days, and, for pairs that did not migrate, the remaining uses.
+We coded each pair along three dimensions (Table~\ref{tab:codebook}): the \emph{change type}, the \emph{trigger} stated in the messages, and the \emph{problems} visible in the material.
+The codes were derived inductively on the hand-picked set and then applied to all 147 pairs.
+\todo{Reliability of the RQ5 coding: who coded, and agreement (Cohen's kappa~\cite{cohen1960}) on the independently coded subset D of manual\_validation.xlsx.}
+
+\begin{table}[t]
+\caption{RQ5 codebook (abridged)}\label{tab:codebook}
+\centering\footnotesize
+\begin{tabular}{@{}lL{0.64\columnwidth}@{}}
+\toprule
+\multicolumn{2}{@{}l}{\textbf{Change type} (one per pair)} \\
+\texttt{bump} & one-to-one replacement (new version, \texttt{\$GITHUB\_OUTPUT}) \\
+\texttt{adapt} & replacement plus changes the new behaviour required \\
+\texttt{remove} & step or workflow deleted instead of replaced \\
+\texttt{replace} & a different mechanism takes over \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Trigger} (first that applies)} \\
+\texttt{bot} & authored or initiated by a dependency bot \\
+\texttt{breakage} & message reports a failing build \\
+\texttt{deprecation} & message names the deprecation or its warning \\
+\texttt{targeted} & change aimed at the component, no reason given \\
+\texttt{routine} & general update of actions or dependencies \\
+\texttt{incidental} & part of unrelated work \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Problems} (one or more)} \\
+\texttt{incompatibility} & new version forced extra changes or a repair \\
+\texttt{environment} & runner or container could not run the new version \\
+\texttt{regression} & migration introduced an error fixed later \\
+\texttt{multiline} & multi-line output values broke \\
+\texttt{deferral} & explicit decision to keep the old version \\
+\bottomrule
+\end{tabular}
+\end{table}

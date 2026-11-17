@@ -12,3 +12,6 @@ paper/*.blg
 paper/*.log
 paper/*.out
 paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/build.log

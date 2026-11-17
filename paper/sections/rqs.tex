@@ -1,0 +1,20 @@
+\section{Research Questions}\label{sec:rqs}
+
+The two events share a warning period but end differently: one with an enforced cutoff that breaks CI, the other with a cutoff that was announced and then withdrawn.
+We use this contrast to ask how projects respond.
+
+\textbf{RQ1: When do projects migrate away from a deprecated component?}
+We place each migration on the timeline of its deprecation: before anything broke, during the brownouts, after the cutoff, or never.
+This tells whether warnings alone move projects, or only breakage does.
+
+\textbf{RQ2: How does the way a deprecation ends affect the speed and extent of migration?}
+We compare the time to migration under the enforced and the withdrawn cutoff, overall and within repositories exposed to both.
+
+\textbf{RQ3: Which project characteristics are associated with timely migration?}
+We relate migrating before any breakage to the size, activity and dependency tooling (Dependabot, Renovate) of a project.
+
+\textbf{RQ4: Who performs the migrations?}
+We classify the author of each migration as a dependency bot, a core maintainer or an external contributor.
+
+\textbf{RQ5: How do projects migrate, and what problems do they meet?}
+We code each migration by the kind of change, what triggered it, and the problems visible in the commits.

@@ -1,0 +1,41 @@
+\section{Background}\label{sec:background}
+
+\subsection{GitHub Actions}
+GitHub Actions runs the continuous integration (CI) of a repository from YAML \emph{workflow} files stored in \texttt{.github/workflows}.
+A workflow consists of jobs, and each job of steps that either run shell commands (\texttt{run:}) or call a reusable \emph{action} referenced by owner, name and version (\texttt{uses: actions/checkout@v4}).
+Workflows therefore depend on two kinds of platform components that GitHub maintains: the official actions published under the \texttt{actions/} organization, and the \emph{workflow commands} through which a step talks to the runner, written as special lines to standard output.
+When GitHub changes one of these components it deprecates the old one: it announces the change in its changelog, shows a warning in the log of every affected run, and names a date after which the old component stops working.
+How that date is handled differs from one deprecation to the next.
+We study two deprecations that ended in opposite ways (Table~\ref{tab:events}).
+
+\subsection{Artifact actions v1--v3: an enforced cutoff}
+The actions \texttt{actions/upload-artifact} and \texttt{actions/download-artifact} store files produced by a job (build outputs, test reports, logs) and pass them between jobs.
+Version~4, released in December~2023, moved artifacts to a new storage backend.
+On 16~April~2024 GitHub announced that versions~1--3 were deprecated~\cite{gh-artifact-deprecation}: v1 and v2 would stop working on 30~June~2024 and v3 on 30~January~2025.
+Before the v3 cutoff GitHub ran three announced \emph{brownouts}, short windows in which v3 workflows failed on purpose, on 9, 16 and 23~January~2025 (1, 4 and 8 hours)~\cite{gh-artifact-brownouts}.
+After the cutoff every run that uses a deprecated version fails.
+Migrating is not always a version bump: v4 artifacts are immutable, so a workflow that uploaded several times to the same artifact name, for example from a build matrix, has to use unique names and merge them afterwards.
+
+\subsection{\so{} and \texttt{save-state}: a withdrawn cutoff}
+A step passes values to later steps with the workflow command \texttt{echo "::set-output name=<key>::<value>"}, and an action keeps state between its phases with \texttt{::save-state}.
+Because the runner parsed these commands from anything printed to standard output, untrusted text written to a log, such as the title of a pull request, could inject outputs.
+On 11~October~2022 GitHub deprecated both commands in favour of writing to the files named by \texttt{\$GITHUB\_OUTPUT} and \texttt{\$GITHUB\_STATE}, and announced that they would be disabled on 31~May~2023~\cite{gh-setoutput-deprecation}.
+On 24~July~2023 GitHub postponed the removal indefinitely because its telemetry still showed significant use~\cite{gh-setoutput-deprecation}.
+The commands still work today and only print a warning.
+
+\begin{table}[t]
+\caption{The two deprecation events}\label{tab:events}
+\centering\footnotesize
+\begin{tabular}{@{}L{0.17\columnwidth}L{0.37\columnwidth}L{0.36\columnwidth}@{}}
+\toprule
+ & \textbf{Artifact actions v1--v3} & \textbf{\so{}, \texttt{save-state}} \\
+\midrule
+Deprecated & action versions (\texttt{uses:}) & workflow commands (\texttt{run:}) \\
+Notice ($T_{warn}$) & 2024-04-16 & 2022-10-11 \\
+Brownouts & 2025-01-09, 16, 23 (v3) & none \\
+Cutoff & 2024-06-30 (v1/v2), 2025-01-30 (v3) & announced for 2023-05-31 \\
+Outcome & enforced: workflows fail & postponed on 2023-07-24 \\
+Fix & \texttt{@v4}, sometimes unique names & write to \texttt{\$GITHUB\_OUTPUT} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,53 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{multirow}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+% Placeholder for text still to be written or numbers still to be confirmed.
+% Search for \todo before submission: none may remain.
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+% Highlighted finding after each research question.
+\newcommand{\finding}[2]{%
+  \par\smallskip\noindent\fbox{\parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{%
+  \textbf{Finding #1.} #2}}\par\smallskip}
+\newcommand{\so}{\texttt{set-output}}
+\newcommand{\art}{artifact actions}
+
+\begin{document}
+
+\title{Warn or Break? How Open-Source Projects Respond to\\
+Platform-Enforced Deprecations in GitHub Actions}
+
+\author{\IEEEauthorblockN{\todo{Given Name Surname}}
+\IEEEauthorblockA{\textit{\todo{Faculty / department}} \\
+\textit{\todo{University}}\\
+\todo{City, Country} \\
+\todo{email}}
+}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/rqs}
+\input{sections/method}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/related}
+\input{sections/conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

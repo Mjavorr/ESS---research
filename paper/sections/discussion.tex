@@ -1,0 +1,11 @@
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Implications}
+\todo{For platform maintainers: warnings in logs move few projects, breakage (including brownouts) moves most; a withdrawn cutoff stalls migration. For project maintainers and tool builders: dependency bots matter before a deprecation, not during it.}
+
+\subsection{Threats to Validity}\label{sec:threats}
+\todo{Write out each item.
+\textbf{Construct}: exposure and migration are measured on the first-parent history of today's default branch (a later default-branch switch can delay the measured date); a fix on another branch counts only when merged; \so{} is detected only in workflow files, not inside third-party actions; brownouts lasted hours, so a migration on a brownout day may precede the failure; author roles are inferred from git history, not from GitHub's author association.
+\textbf{Internal}: the two events differ in period, component and fix effort, not only in their ending; the within-repository comparison controls for the project but not for the period; non-migrants are censored.
+\textbf{External}: established, collaborative projects only (SEART thresholds); two events of one platform.
+\textbf{Reliability}: RQ5 codes are qualitative; detection validated manually; scripts and data are public and every result table is reproduced from them.}

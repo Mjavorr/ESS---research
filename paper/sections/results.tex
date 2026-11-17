@@ -1,0 +1,28 @@
+\section{Results}\label{sec:results}
+
+\subsection{RQ1: When do projects migrate?}\label{sec:rq1}
+\todo{Phase table for both events (results/sample\_phases.tsv); weekly histogram (Fig.~\ref{fig:weekly}); finding box.}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/sample_weekly.pdf}
+\caption{Migrations per week with the key dates of each deprecation.}\label{fig:weekly}
+\end{figure}
+
+\subsection{RQ2: Does the way a deprecation ends matter?}\label{sec:rq2}
+\todo{Kaplan--Meier curves (Fig.~\ref{fig:km}), medians, share migrated after 30/90/180/365 days, log-rank test, paired comparison, sensitivity check; finding box.}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/sample_km.pdf}
+\caption{Share of exposed repositories still using the deprecated component, by days since the deprecation notice (Kaplan--Meier; ticks mark censored repositories).}\label{fig:km}
+\end{figure}
+
+\subsection{RQ3: Which projects migrate in time?}\label{sec:rq3}
+\todo{Descriptive comparison and Cox models (results/sample\_rq3\_*.tsv), Holm-corrected p-values and proportional-hazards check (results/sample\_robustness.tsv); Dependabot selection effect; finding box.}
+
+\subsection{RQ4: Who migrates?}\label{sec:rq4}
+\todo{Author table by event and phase (results/sample\_rq4\_authors.tsv); finding box.}
+
+\subsection{RQ5: How do projects migrate, and what goes wrong?}\label{sec:rq5}
+\todo{Change types, triggers and problems (results/sample\_rq5\_*.tsv) with short examples; finding box.}
