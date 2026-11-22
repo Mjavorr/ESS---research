@@ -38,8 +38,9 @@ Commented-out lines are ignored for both.
 
 \textbf{Exposure and migration.}
 A repository is \emph{exposed} to an event if its default branch contained at least one deprecated use on the day of the deprecation notice ($T_{warn}$).
+For the artifact actions we use the second notice, 16~April~2024, as $T_{warn}$: from that day on all three versions were deprecated, and the notice repeated the v1/v2 date.
 For an exposed repository, the \emph{migration} is the earliest default-branch commit after $T_{warn}$ after which no deprecated use remains; a repository with uses left on the collection day did not migrate.
-For the artifact actions we treat v1/v2 and v3 separately, because their cutoffs differ: a migration counts as after the cutoff if any version group that the repository used at $T_{warn}$ disappeared only after that group's cutoff.
+For the artifact actions we also track v1/v2 and v3 separately, because they broke on different days: we record for each version group that the repository used at $T_{warn}$ when its last use disappeared.
 
 Of the 498 repositories, 124 were exposed to at least one event: 90 to the artifact deprecation, 57 to the \so{} deprecation and 23 to both, giving 147 (repository, event) pairs.
 
@@ -56,7 +57,8 @@ Pairs that never migrated are right-censored at the repository's last commit or 
 
 \textbf{RQ1.}
 We assign each migration to a phase of its event's timeline.
-For the artifact actions the phases are \emph{before any breakage} (before the first brownout for v3, before the cutoff for v1/v2), \emph{during the brownouts} (9--29~January~2025), and \emph{after the cutoff}.
+For the artifact actions we use the days on which workflows actually failed rather than the announced dates: a migration happened \emph{after the cutoff} if some version group disappeared only after it broke (6~September~2024 for v1/v2, the first public failure report; 30~January~2025 for v3), \emph{during the brownouts} if the v3 group disappeared between 9 and 29~January~2025, and \emph{before any breakage} otherwise.
+For the v1/v2 group we also count the migrations before the announced cutoff, between the announced cutoff and the first failures, and in the two weeks after the first failures.
 For \so{} they are \emph{before the announced cutoff} (31~May~2023), \emph{between the announced cutoff and its postponement} (24~July~2023), and \emph{after the postponement}.
 We also plot migrations per calendar week against the key dates.
 

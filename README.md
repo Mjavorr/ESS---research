@@ -114,9 +114,9 @@ migrated are censored at their last commit or at data collection, whichever is e
 
 | Artifact actions v1–v3 (n = 90) | | `set-output` (n = 57) | |
 | --- | --- | --- | --- |
-| before any breakage | 27 (30%) | before the announced cutoff | 25 (44%) |
+| before any breakage | 30 (33%) | before the announced cutoff | 25 (44%) |
 | during the v3 brownouts | 4 (4%) | between cutoff date and postponement | 1 (2%) |
-| after the cutoff (CI broken) | 54 (60%) | after the postponement | 22 (39%) |
+| after the cutoff (CI broken) | 51 (57%) | after the postponement | 22 (39%) |
 | not migrated | 5 (6%) | not migrated | 9 (16%) |
 
 **RQ2, survival** (`results/sample_survival.tsv`, `results/sample_km.pdf`):
@@ -125,7 +125,12 @@ migrated are censored at their last commit or at data collection, whichever is e
   when non-migrants are censored at the collection date instead of their last commit (log-rank p < 0.001).
 - Migrated within one year: 85% (artifact) vs 49% (`set-output`); log-rank χ² = 12.8, p < 0.001.
 - `set-output` migrates faster at first (19% within 30 days vs 7%), then flattens after the cutoff is
-  postponed; artifact migrations pile up around the brownouts and the cutoff (`results/sample_weekly.pdf`).
+  postponed; artifact migrations pile up when v1/v2 workflows start failing (September 2024) and around
+  the v3 brownouts and cutoff, not at the announced dates (`results/sample_weekly.pdf`).
+- v1/v2 were announced for 2024-06-30 but jobs failed only from early September 2024 (first public reports
+  2024-09-06; see `docs/events.md`). Of the 35 repositories that dropped v1/v2: 3 before the announced
+  date, 4 in the ten weeks after it while the old versions still worked, 11 within two weeks of the
+  first failures, 17 later (`results/sample_v12_windows.tsv`). RQ1 phases use the actual breakage dates.
 - The 18 repositories that migrated away from both took less time for the artifact actions
   (median difference 296 days, Wilcoxon signed-rank p = 0.021).
 
@@ -137,9 +142,10 @@ group's own cutoff. Detection also covers minor tags (`@v3.1.3`) and commit pins
 
 - No project characteristic robustly predicts timely migration. Two associations are suggestive but
   do not survive a Holm correction (`results/sample_robustness.tsv`):
-  - artifact actions: projects that migrated in time were more active before the warning (median 100 vs
-    60 commits in the preceding 6 months; Mann-Whitney p = 0.021, Holm 0.38; Cox HR 1.14 per e-fold
-    increase, 95% CI 1.02–1.28, Holm p = 0.18);
+  - artifact actions: projects that migrated in time more often had Dependabot or Renovate (17% vs 3%,
+    Fisher p = 0.039, Holm 0.66) and were somewhat more active before the warning (median 96 vs 62
+    commits in the preceding 6 months; Mann-Whitney p = 0.060; Cox HR 1.14 per e-fold increase,
+    95% CI 1.02–1.28, Holm p = 0.18);
   - `set-output`: projects with Dependabot or Renovate configured migrated faster (Cox HR 2.39, 95% CI
     1.21–4.72, Holm p = 0.096), although no `set-output` migration was made by a bot.
 - Stars, contributors, age and the number of occurrences show no effect.
@@ -153,8 +159,8 @@ group's own cutoff. Detection also covers minor tags (`@v3.1.3`) and commit pins
 | | bot | core maintainer | external contributor |
 | --- | --- | --- | --- |
 | Artifact actions (85 migrations) | 4 (5%) | 63 (74%) | 18 (21%) |
-| … before any breakage (27) | 3 | 16 | 8 |
-| … after the cutoff (54) | 1 | 44 | 9 |
+| … before any breakage (30) | 4 | 17 | 9 |
+| … after the cutoff (51) | 0 | 43 | 8 |
 | `set-output` (48 migrations) | 0 | 45 (94%) | 3 (6%) |
 
 Authors are classified from the default-branch history of the year before the migration: core if they
@@ -197,3 +203,7 @@ before any breakage and the `set-output` median is 51 days (`results/handpicked_
 - `set-output` is only detected when used directly in workflow files, not inside third-party actions.
 - Repositories that never migrated are censored at collection time, not treated as non-migrants.
 - The v3 brownouts lasted 1 to 8 hours each; a migration on a brownout day may still predate the failure.
+- The v1/v2 breakage date (2024-09-06) is the first public failure report we found, not an announced
+  date; enforcement may have started a few days earlier or rolled out gradually.
+- Exposure to the artifact deprecation is measured at the v3 notice (2024-04-16); repositories that
+  dropped v1/v2 between the v1/v2 notice (2024-02-13) and then, and used no v3, are not counted.

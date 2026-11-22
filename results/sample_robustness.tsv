@@ -7,15 +7,15 @@ proportional hazards	set_output	stars	rho=0.10	p=0.485	ok
 proportional hazards	set_output	commits_6m	rho=-0.14	p=0.332	ok
 proportional hazards	set_output	occurrences	rho=0.04	p=0.798	ok
 proportional hazards	set_output	update_bot	rho=0.50	p=0.000	effect varies over time
-Holm, rq3_descriptive	artifact_v3	stars	p=0.351	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	contributors	p=0.277	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	commits in 6 months before warning	p=0.021	p_holm=0.378	not significant
-Holm, rq3_descriptive	artifact_v3	workflow files	p=0.117	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	deprecated occurrences	p=0.807	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	age (years)	p=0.221	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Dependabot for Actions	p=0.157	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Renovate	p=0.213	p_holm=1.000	not significant
-Holm, rq3_descriptive	artifact_v3	Dependabot or Renovate	p=0.191	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	stars	p=0.175	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	contributors	p=0.526	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	commits in 6 months before warning	p=0.060	p_holm=0.960	not significant
+Holm, rq3_descriptive	artifact_v3	workflow files	p=0.093	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	deprecated occurrences	p=0.937	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	age (years)	p=0.195	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	Dependabot for Actions	p=0.328	p_holm=1.000	not significant
+Holm, rq3_descriptive	artifact_v3	Renovate	p=0.035	p_holm=0.630	not significant
+Holm, rq3_descriptive	artifact_v3	Dependabot or Renovate	p=0.039	p_holm=0.663	not significant
 Holm, rq3_descriptive	set_output	stars	p=0.601	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	contributors	p=0.303	p_holm=1.000	not significant
 Holm, rq3_descriptive	set_output	commits in 6 months before warning	p=0.108	p_holm=1.000	not significant

@@ -23,11 +23,12 @@ EVENTS = {
     # Official artifact actions v1-v3 by tag, minor/patch tag or commit pin (see patterns.py).
     "artifact_v3": {
         "regex": ARTIFACT_ALL["ere"],
-        "t_warn": "2024-04-16",    # GitHub changelog: deprecation notice
-        "t_enforce": "2025-01-30",  # changelog 2024-04-16: v3 stops working 30 Jan 2025
-        # Version groups with their own cutoff (same changelog: v1/v2 on 30 Jun 2024).
-        # A repository counts as migrating "after enforcement" if any group it used at
-        # T_warn disappeared only after that group's cutoff.
+        "t_warn": "2024-04-16",    # v3 notice; from then on v1-v3 were all deprecated (v1/v2 notice: 2024-02-13)
+        "t_enforce": "2025-01-30",  # final v3 cutoff (first announced for 2024-11-30)
+        # Version groups with their announced cutoff (v1/v2: 30 Jun 2024). A repository counts as
+        # migrating "after enforcement" if any group it used at T_warn disappeared only after that
+        # group's announced cutoff. v1/v2 actually broke only in early September 2024, so RQ1 phases
+        # are recomputed from group_migrations in analyze_timing.py (see docs/events.md).
         "groups": [
             (ARTIFACT_V12["ere"], "2024-06-30"),
             (ARTIFACT_V3["ere"], "2025-01-30"),

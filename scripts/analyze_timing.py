@@ -39,15 +39,19 @@ EVENTS = {
         "color": "#2a78d6",
         "t_warn": D("2024-04-16"),
         "marks": [  # (date, label) drawn on the figures
-            (D("2024-04-16"), "deprecation notice"),
-            (D("2024-06-30"), "v1/v2 cutoff"),
+            (D("2024-04-16"), "v3 notice"),
+            (D("2024-06-30"), "announced v1/v2 cutoff"),
+            (D("2024-09-06"), "v1/v2 jobs fail"),
+            (D("2024-11-30"), "first announced v3 cutoff"),
             (D("2025-01-09"), "first brownout"),
             (D("2025-01-30"), "v3 cutoff"),
         ],
-        # KM figure: (from, to, label, y, side) - a span is drawn as a band
+        # KM figure: (from, to, label, y, side) - a span is drawn as a band; labels are
+        # vertical, starting at height y, on the given side of the line
         "km_marks": [
-            (D("2024-06-30"), None, "v1/v2 cutoff", 98, "right"),
-            (D("2025-01-09"), D("2025-01-30"), "v3 brownouts, then cutoff", 98, "right"),
+            (D("2024-06-30"), None, "announced v1/v2 cutoff", 2, "right"),
+            (D("2024-09-06"), None, "v1/v2 jobs fail", 2, "right"),
+            (D("2025-01-09"), D("2025-01-30"), "v3 brownouts, cutoff", 2, "left"),
         ],
     },
     "set_output": {
@@ -61,12 +65,17 @@ EVENTS = {
             (D("2023-07-24"), "cutoff postponed"),
         ],
         "km_marks": [
-            (D("2023-05-31"), None, "announced cutoff", 6, "left"),
-            (D("2023-07-24"), None, "postponed", 6, "right"),
+            (D("2023-05-31"), None, "announced cutoff", 2, "left"),
+            (D("2023-07-24"), None, "postponed", 2, "right"),
         ],
     },
 }
 BROWNOUT_START, V3_CUTOFF = D("2025-01-09"), D("2025-01-30")
+# v1/v2 were announced for 2024-06-30, but jobs kept running for two more months; the first
+# public failure reports date from 2024-09-06 (docs/events.md). RQ1 phases use the date on
+# which workflows actually broke; the scanner's `category` compares with the announced date.
+V12_ANNOUNCED, V12_BREAKS = D("2024-06-30"), D("2024-09-06")
+BREAKS = {"2024-06-30": V12_BREAKS, "2025-01-30": V3_CUTOFF}  # announced cutoff -> breakage
 SO_CUTOFF, SO_POSTPONED = D("2023-05-31"), D("2023-07-24")
 INK, INK2, GRID = "#1f1f1e", "#62615b", "#e4e3df"
 
@@ -143,15 +152,25 @@ def load(path, collection):
     return pairs
 
 
+def groups(p):
+    """Per version group of the artifact actions: {announced cutoff: migration date or None}."""
+    out = {}
+    for part in filter(None, p["groups"].split(";")):
+        cutoff, mig = part.split(":")
+        out[cutoff] = D(mig) if mig not in ("", "?") else None
+    return out
+
+
 def phase(p):
     """RQ1 phase of a migration on its deprecation's timeline."""
     if not p["observed"]:
         return "not migrated"
     m = p["migration"]
     if p["event"] == "artifact_v3":
-        if p["category"] == "after_enforcement":
+        g = groups(p)
+        if any(mig is None or mig >= BREAKS[c] for c, mig in g.items()):
             return "after cutoff (broken)"
-        if "2025-01-30" in p["groups"] and m >= BROWNOUT_START:
+        if "2025-01-30" in g and g["2025-01-30"] >= BROWNOUT_START:
             return "during brownouts"
         return "before any breakage"
     if m < SO_CUTOFF:
@@ -210,8 +229,8 @@ def fig_km(curves, out):
                 x1 = x0
                 ax.axvline(x0, color=ev["color"], linewidth=0.8, linestyle=(0, (3, 3)))
             ax.annotate(label, (x1 if side == "right" else x0, y), fontsize=6.5, color=INK2,
-                        ha="left" if side == "right" else "right", va="center",
-                        xytext=(3 if side == "right" else -3, 0), textcoords="offset points")
+                        rotation=90, ha="left" if side == "right" else "right", va="bottom",
+                        xytext=(2 if side == "right" else -2, 0), textcoords="offset points")
     ax.set_xlim(0, xmax * 1.06)
     ax.set_ylim(0, 102)
     ax.set_xlabel("Days since the deprecation notice", fontsize=8.5, color=INK)
@@ -279,6 +298,17 @@ def main(scan, out_dir, label, collection="2026-10-28"):
             rows.append([key, ph, n, f"{100 * n / len(ps):.1f}"])
     write_tsv(f"{base}_phases.tsv", ["event", "phase", "repositories", "percent"], rows)
 
+    # RQ1/RQ2: v1/v2 users around the announced cutoff and the actual breakage
+    windows = [("before announced cutoff", None, V12_ANNOUNCED),
+               ("announced cutoff -> jobs fail", V12_ANNOUNCED, V12_BREAKS),
+               ("first 14 days of failures", V12_BREAKS, V12_BREAKS + timedelta(days=14)),
+               ("later", V12_BREAKS + timedelta(days=14), None)]
+    v12 = [groups(p)["2024-06-30"] for p in pairs
+           if p["event"] == "artifact_v3" and "2024-06-30" in groups(p)]
+    wrows = [[name, sum(1 for m in v12 if m and (lo is None or m >= lo) and (hi is None or m < hi))]
+             for name, lo, hi in windows]
+    write_tsv(f"{base}_v12_windows.tsv", ["window", "v1/v2 version groups migrated"], wrows)
+
     # RQ2: survival per event
     curves, srows = {}, []
     for key in EVENTS:
@@ -321,6 +351,8 @@ def main(scan, out_dir, label, collection="2026-10-28"):
     print(f"[{label}] {len({p['repo'] for p in pairs})} exposed repositories, {len(pairs)} (repo, event) pairs")
     for r in rows:
         print(f"  {r[0]:12} {r[1]:38} {r[2]:>4}  {r[3]:>5}%")
+    print("  v1/v2 version groups (migrated repositories): "
+          + "; ".join(f"{w}: {n}" for w, n in wrows))
     for r in srows[:-1]:
         print(f"  {r[0]:12} n={r[1]} migrated={r[2]} KM median={r[4]} d; migrated by 30/90/180/365/730 d: "
               + "/".join(r[5:10]) + " %")
